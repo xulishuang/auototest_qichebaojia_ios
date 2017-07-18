@@ -19,24 +19,20 @@ public class HomePageTest extends AppTestSuite{
 	  public void ershouche_homepage_testcase1() throws Exception {
 		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
-		  //默认显示当前所在城市，点击地区
-		  Common.touchId(driver,Id.TITLE_LEFT_BTN);
-		  String text=Common.getText(driver, By.id(Id.PROVINCE_NAME_TV));
-		  Assert.assertEquals(text, Text.CURRENT_CITY, "current city is Beijing");
-		  //检查弹出城市选择页
-		  Assert.assertTrue(Common.checkTextExist(driver,Text.CHOOSE_CITY), "Enter city choose page");
-		  //选择某省份、城市
-		  Common.touchSlideText(driver,Text.PROVINCE_HUNAN,3);
-		  Common.touchText(driver,Text.CITY_CHANGSHA);		  
-		  //返回到二手车列表页，显示选择的城市
-		  Assert.assertTrue(Common.checkTextExist(driver,Text.ERSHOUCHE), "Enter ershouche page");
-		  Assert.assertTrue(Common.checkTextExist(driver,Text.CITY_CHANGSHA), "City is Changsha");
-		  
-		  //恢复到current city
-		  Common.touchId(driver,Id.TITLE_LEFT_BTN);
-		  Common.back(driver);
-		  Common.swipeToDown(driver, 500, 2);
-		  Common.touchText(driver, Text.CURRENT_CITY);
+		  //点击地区
+		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIAButton[1]");
+		  //检查弹出城市选择页，且显示当前所在城市为北京
+		  Assert.assertTrue(Common.checkTextExist(driver,"选择城市"), "检查进入选择城市页面");
+		  String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]"));
+		  Assert.assertEquals(text,"北京","检查城市默认显示为北京");
+		  //选择某省份、城市：重庆
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[3]/UIAButton[4]");	  
+		  //检查返回到二手车列表页，显示选择的城市
+		  Assert.assertTrue(Common.checkTextExist(driver,"二手车"), "检查返回二手车页面");
+		  Assert.assertTrue(Common.checkTextExist(driver,"重庆"), "检查城市显示为重庆");
+		  //恢复环境：选择城市为北京
+		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIAButton[1]");
+		  Common.touchXpath(driver, " //UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]");
 	  }
 	  
 //	  /** 
@@ -54,29 +50,24 @@ public class HomePageTest extends AppTestSuite{
 		 */	
 	  @Test(priority = 3)
 	  public void ershouche_homepage_testcase3() throws Exception {
+		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击帮买二手车
-		  if(Common.checkIdExist(driver,Id.USEDCAR_BUY_TITLE)){
-			  Common.touchId(driver, Id.USEDCAR_BUY_TITLE);
-			  String text1=Common.getText(driver, By.id(Id.TITLE_CENTER_TXT));
-			  Assert.assertEquals(text1,Text.HELP_BUY_SERVICE,"Enter Bangmai Page");
-//			  Assert.assertTrue(Common.checkIdExist(driver, Id.WEBVIEW),"H5 Page");
-			  //点击关闭
-			  Common.touchText(driver, Text.CLOSE);
-			  String text=Common.getText(driver, By.id(Id.TITLE_CENTER_TXT));
-			  Assert.assertEquals(text, Text.ERSHOUCHE, "back to ershouche page");
-		  }
-		  
+		  if(Common.checkTextExist(driver,"帮买二手车")){
+			  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIAButton[1]");
+			  //检查进入帮买服务页面
+			  Assert.assertTrue(Common.checkTextExist(driver, "帮买服务"),"检查进入帮买服务页面");
+			  //点击返回至二手车
+			  Common.back(driver);
+		  }  
 		  //点击帮您卖车
-		  if(Common.checkIdExist(driver,Id.USEDCAR_SALE_TITLE)){
-			  Common.touchId(driver, Id.USEDCAR_SALE_TITLE);
-			  String text=Common.getText(driver, By.id(Id.TITLE_CENTER_TXT));
-			  Assert.assertEquals(text, Text.HELP_SALE_SERVICE,"Enter sBangmai Page");
-//			  Assert.assertTrue(Common.checkIdExist(driver, Id.WEBVIEW),"H5 Page");
-			  //点击关闭
-			  Common.touchText(driver, Text.CLOSE);
-			  String text1=Common.getText(driver, By.id(Id.TITLE_CENTER_TXT));
-			  Assert.assertEquals(text1, Text.ERSHOUCHE, "back to ershouche page");
+		  if(Common.checkTextExist(driver,"帮您卖车")){
+			  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIAButton[2]");
+			  //检查进入帮您卖车页面
+			  Assert.assertTrue(Common.checkTextExist(driver,"帮您卖车"),"检查进入帮您卖车页面");
+			  //点击返回二手车页面
+			  Common.back(driver);
+			  Assert.assertTrue(Common.checkTextExist(driver, "二手车"), "检查返回二手车页面");
 		  }
 	  }
 	  
@@ -86,27 +77,22 @@ public class HomePageTest extends AppTestSuite{
 		 */	
 	  @Test(priority = 4)
 	  public void ershouche_homepage_testcase4() throws Exception {
+		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击品牌下拉菜单
-		  Common.touchId(driver, Id.CAR_MODELS);
+		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[1]");
 		  //检查进入品牌选择页
-		  String text=Common.getText(driver, By.id(Id.TITLE_CENTER_TXT));
-		  Assert.assertEquals(text, Text.BRAND, "enter brand choose page");
-		  //选择品牌
-		  Common.touchText(driver,Text.AUDI);
-		  //选择车型
-		  Common.touchSlideText(driver, Text.AUDI_A4L, 3);
-		  //检查返回二手车界面
-		  Common.waitForVisible(driver, By.name(Text.ERSHOUCHE), 15);
-		  String text1=Common.getText(driver, By.id(Id.TITLE_CENTER_TXT));
-		  Assert.assertEquals(text1, Text.ERSHOUCHE, "back to ershouche page");
-		  
-		  String text2=Common.getText(driver, By.id(Id.CAR_MODELS));
-		  Assert.assertEquals(text2, Text.AUDI_A4L, "show A4L information");
-		  
+		  Assert.assertTrue(Common.checkTextExist(driver, "品牌")&&Common.checkTextNotExist(driver,"二手车"),"检查进入品牌选择页面");
+		  //选择品牌：奥迪
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]");
+		  //选择车型:奥迪Q5
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[4]");
+		  //检查品牌车型筛选成功
+		  String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[1]"));
+		  Assert.assertEquals(text,"奥迪Q5","检查品牌车型筛选成功");
 		  //恢复环境，选择全部车型
-		  Common.touchId(driver, Id.CAR_MODELS);
-		  Common.touchText(driver, Text.ALL_MODELS);
+		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[1]");
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIAButton[1]");
 	  }
 	  
 	  /** 
@@ -115,33 +101,27 @@ public class HomePageTest extends AppTestSuite{
 		 */	
 	  @Test(priority = 5)
 	  public void ershouche_homepage_testcase5() throws Exception {
+		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击价格下拉菜单
-		  Common.touchId(driver, Id.CAR_PRICE);
-		  //选择价格区间
-		  Common.touchText(driver,Text.PRICE_15_20);
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[2]");
+		  //选择价格区间:15-20
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[8]");
 		  //检查返回到二手车列表页，显示选择的价格区间
-		  Common.waitForVisible(driver, By.name(Text.ERSHOUCHE), 15);
-		  String text=Common.getText(driver, By.id(Id.TITLE_CENTER_TXT));
-		  Assert.assertEquals(text, Text.ERSHOUCHE, "back to ershouche page");
-		  String text1=Common.getText(driver, By.id(Id.CAR_PRICE));
-		  Assert.assertEquals(text1, Text.PRICE_15_20, "show 15-20");
+		  String text=Common.getText(driver,By.xpath("//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[2]"));
+		  Assert.assertEquals(text,"15-20万","检查价格区间筛选成功");
 		  //再次点击价格下拉菜单
-		  Common.touchId(driver, Id.CAR_PRICE);
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[2]");
 		  //输入自定义价格，点【确定】
-		  Common.sendTextById(driver, Id.EDIT1, "10");
-		  Common.sendTextById(driver, Id.EDIT2, "30");
-		  Common.touchText(driver,Text.OK);
+		  Common.sendText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATextField[1]"), "10");
+		  Common.sendText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATextField[2]"), "30");
+		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[1]");
 		  //检查返回到二手车列表页，显示自定义价格区间
-		  Common.waitForVisible(driver, By.name(Text.ERSHOUCHE), 15);
-		  String text3=Common.getText(driver, By.id(Id.TITLE_CENTER_TXT));
-		  Assert.assertEquals(text3, Text.ERSHOUCHE, "back to ershouche page");
-		  String text4=Common.getText(driver, By.id(Id.CAR_PRICE));
-		  Assert.assertEquals(text4, "10-30万", "show 10-30");
-		  
+		  String text1=Common.getText(driver,By.xpath("//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[2]"));
+		  Assert.assertEquals(text1,"10-30万","检查价格区间筛选成功");
 		  //恢复环境，选择价格为不限
-		  Common.touchId(driver, Id.CAR_PRICE);
-		  Common.touchText(driver, Text.UNLIMITED);
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[2]");
+		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[2]");
 	  }
 	  
 	  /** 
@@ -150,43 +130,44 @@ public class HomePageTest extends AppTestSuite{
 		 */	
 	  @Test(priority = 6)
 	  public void ershouche_homepage_testcase6() throws Exception {
+		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击筛选下拉菜单
-		  Common.touchId(driver, Id.CAR_YEARS);
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[3]");
 		  //选择车龄、里程、级别、车源、变速箱、排量、国别，点【确定】
-		  Common.touchText(driver,Text.LESS_THAN_1YEAR);
-		  Common.touchText(driver,Text.LESS_THAN_10THOUSAND_KM);
-		  Common.touchText(driver,Text.MIDSIZE_CAR);
-		  Assert.assertTrue(Common.checkTextIsSelected(driver,Text.LESS_THAN_1YEAR), "Is selected");
-		  Assert.assertTrue(Common.checkTextIsSelected(driver,Text.LESS_THAN_10THOUSAND_KM), "Is selected");
-		  Assert.assertTrue(Common.checkTextIsSelected(driver,Text.MIDSIZE_CAR), "Is selected");
-		  Common.touchText(driver, Text.OK);
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIAButton[1]"); //1年内
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIAButton[7]"); //1万公里内
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIAButton[14]"); //中型车
+		  Assert.assertTrue(Common.checkIsSelected(driver,By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIAButton[1]")), "检查1年内选择成功");
+		  Assert.assertTrue(Common.checkIsSelected(driver,By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIAButton[7]")), "检查1万公里内选择成功");
+		  Assert.assertTrue(Common.checkIsSelected(driver,By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIAButton[14]")), "检查中型车选择成功");
+		  //点击确认
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAButton[3]");
 		  //检查返回到二手车列表页
-		  Common.waitForVisible(driver, By.name(Text.ERSHOUCHE), 15);
-		  String text=Common.getText(driver, By.id(Id.TITLE_CENTER_TXT));
-		  Assert.assertEquals(text, Text.ERSHOUCHE, "back to ershouche page");
+		  Assert.assertTrue(Common.checkTextExist(driver, "二手车"),"检查返回二手车页面");
 	  }
 	    
 	  /** 
 		 * 条件-清空筛选条件
+		 * @preconditon 接续testcase6
 		 * 
 		 */	
 	  @Test(priority = 7)
 	  public void ershouche_homepage_testcase7() throws Exception {
+		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击筛选下拉菜单
-		  Common.touchId(driver, Id.CAR_YEARS);
-		  //选择车龄、里程、级别、车源、变速箱、排量、国别，点【重置】
-		  Common.touchText(driver, Text.RESET);
-		  Assert.assertTrue(Common.checkTextIsNotSelected(driver,Text.LESS_THAN_1YEAR), "Is not selected");
-		  Assert.assertTrue(Common.checkTextIsNotSelected(driver,Text.LESS_THAN_10THOUSAND_KM), "Is not selected");
-		  Assert.assertTrue(Common.checkTextIsNotSelected(driver,Text.MIDSIZE_CAR), "Is not selected");
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[3]");
+		  //点【重置】
+		  Common.touchXpath(driver," //UIAApplication[1]/UIAWindow[1]/UIAButton[2]");
+		  //检查重置成功
+		  Assert.assertFalse(Common.checkIsSelected(driver,By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIAButton[1]")), "检查重置成功");
+		  Assert.assertFalse(Common.checkIsSelected(driver,By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIAButton[7]")), "检查重置成功");
+		  Assert.assertFalse(Common.checkIsSelected(driver,By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIAButton[14]")), "检查重置成功");
 		  //点击【确定】
-		  Common.touchText(driver,Text.OK);
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAButton[3]");
 		  //检查返回到二手车列表页
-		  Common.waitForVisible(driver, By.name(Text.ERSHOUCHE), 15);
-		  String text=Common.getText(driver, By.id(Id.TITLE_CENTER_TXT));
-		  Assert.assertEquals(text, Text.ERSHOUCHE, "back to ershouche page");
+		  Assert.assertTrue(Common.checkTextExist(driver, "二手车"),"检查返回二手车页面");
 	  }
 	  
 	  /** 
@@ -195,17 +176,15 @@ public class HomePageTest extends AppTestSuite{
 		 */	
 	  @Test(priority = 8)
 	  public void ershouche_homepage_testcase8() throws Exception {
+		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击排序下拉菜单
-		  Common.touchId(driver,Id.CAR_MILEAGE);
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[4]");
 		  //选择【价格最低】
-		  Common.touchText(driver, Text.LOWEST_PRICE);
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[2]");
 		  //返回到二手车列表
-		  Common.waitForVisible(driver, By.name(Text.ERSHOUCHE), 15);
-		  String text=Common.getText(driver, By.id(Id.TITLE_CENTER_TXT));
-		  Assert.assertEquals(text, Text.ERSHOUCHE, "back to ershouche page");
-		  String text1=Common.getText(driver, By.id(Id.CAR_MILEAGE));
-		  Assert.assertEquals(text1, Text.LOWEST_PRICE, "lowest price");
+		  String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[4]"));
+		  Assert.assertEquals(text,"价格最低","检查显示价格最低列表");
 	  }
 	  
 	  /** 
@@ -214,17 +193,15 @@ public class HomePageTest extends AppTestSuite{
 		 */	
 	  @Test(priority = 9)
 	  public void ershouche_homepage_testcase9() throws Exception {
+		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击排序下拉菜单
-		  Common.touchId(driver,Id.CAR_MILEAGE);
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[4]");
 		  //选择【价格最高】
-		  Common.touchText(driver, Text.HIGHEST_PRICE);
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[3]");
 		  //返回到二手车列表
-		  Common.waitForVisible(driver, By.name(Text.ERSHOUCHE), 15);
-		  String text=Common.getText(driver, By.id(Id.TITLE_CENTER_TXT));
-		  Assert.assertEquals(text, Text.ERSHOUCHE, "back to ershouche page");
-		  String text1=Common.getText(driver, By.id(Id.CAR_MILEAGE));
-		  Assert.assertEquals(text1, Text.HIGHEST_PRICE, "highest price");
+		  String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[4]"));
+		  Assert.assertEquals(text,"价格最高","检查显示价格最高列表");
 	  }
 	  
 	  /** 
@@ -233,17 +210,15 @@ public class HomePageTest extends AppTestSuite{
 		 */	
 	  @Test(priority = 10)
 	  public void ershouche_homepage_testcase10() throws Exception {
+		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击排序下拉菜单
-		  Common.touchId(driver,Id.CAR_MILEAGE);
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[4]");
 		  //选择【时间最新】
-		  Common.touchText(driver, Text.NEWEST_TIME);
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[4]");
 		  //返回到二手车列表
-		  Common.waitForVisible(driver, By.name(Text.ERSHOUCHE), 15);
-		  String text=Common.getText(driver, By.id(Id.TITLE_CENTER_TXT));
-		  Assert.assertEquals(text, Text.ERSHOUCHE, "back to ershouche page");
-		  String text1=Common.getText(driver, By.id(Id.CAR_MILEAGE));
-		  Assert.assertEquals(text1, Text.NEWEST_TIME, "newest price");
+		  String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[4]"));
+		  Assert.assertEquals(text,"时间最新","检查显示时间最新列表");
 	  }
 	  
 	  /** 
@@ -252,17 +227,15 @@ public class HomePageTest extends AppTestSuite{
 		 */	
 	  @Test(priority = 11)
 	  public void ershouche_homepage_testcase11() throws Exception {
+		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击排序下拉菜单
-		  Common.touchId(driver,Id.CAR_MILEAGE);
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[4]");
 		  //选择【车龄最短】
-		  Common.touchText(driver, Text.SHORTEST_CAR_AGE);
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[5]");
 		  //返回到二手车列表
-		  Common.waitForVisible(driver, By.name(Text.ERSHOUCHE), 15);
-		  String text=Common.getText(driver, By.id(Id.TITLE_CENTER_TXT));
-		  Assert.assertEquals(text, Text.ERSHOUCHE, "back to ershouche page");
-		  String text1=Common.getText(driver, By.id(Id.CAR_MILEAGE));
-		  Assert.assertEquals(text1, Text.SHORTEST_CAR_AGE, "shortest car age");
+		  String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[4]"));
+		  Assert.assertEquals(text,"车龄最短","检查显示车龄最短列表");
 	  }
 	  
 	  /** 
@@ -271,16 +244,14 @@ public class HomePageTest extends AppTestSuite{
 		 */	
 	  @Test(priority = 12)
 	  public void ershouche_homepage_testcase12() throws Exception {
+		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击排序下拉菜单
-		  Common.touchId(driver,Id.CAR_MILEAGE);
-		  //选择【车龄最短】
-		  Common.touchText(driver, Text.MINIMUM_MILEAGE);
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[4]");
+		  //选择【里程最少】
+		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[6]");
 		  //返回到二手车列表
-		  Common.waitForVisible(driver, By.name(Text.ERSHOUCHE), 15);
-		  String text=Common.getText(driver, By.id(Id.TITLE_CENTER_TXT));
-		  Assert.assertEquals(text, Text.ERSHOUCHE, "back to ershouche page");
-		  String text1=Common.getText(driver, By.id(Id.CAR_MILEAGE));
-		  Assert.assertEquals(text1, Text.MINIMUM_MILEAGE, "minimum mileage");
+		  String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAButton[4]"));
+		  Assert.assertEquals(text,"里程最少","检查显示里程最少列表");
 	  }
 }
