@@ -18,11 +18,9 @@
     </classes>  
   </test> -->
   
-  <test name="xinche" preserve-order="true">
+  <test name="ershouche" preserve-order="true">
     <classes>  
-      <class name="script.xinche.CheXingShouCangTest"/>
-      <class name="script.xinche.TiaoJianXuanCheTest"/>
-      <class name="script.xinche.ZiPinPaiZongShuTest"/>
+      <class name="script.ershouche.CheYuanXiangQingTest"/>
     </classes>  
   </test>
 

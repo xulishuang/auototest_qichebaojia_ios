@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="script.ershouche.CheYuanXiangQingTest">
+      <class name="script.ershouche.HomePageTest">
         <methods>
-          <include name="ershouche_cheyuanxiangqing_testcase8"/>
           <include name="beforeSuite"/>
+          <include name="ershouche_homepage_testcase3"/>
           <include name="afterMethod"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- script.ershouche.CheYuanXiangQingTest -->
+      </class> <!-- script.ershouche.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
