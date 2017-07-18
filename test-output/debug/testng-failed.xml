@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [debug]">
+  <test name="Debug(failed)">
+    <classes>
+      <class name="script.bangmaiche.Xml">
+        <methods>
+          <include name="testcase2"/>
+          <include name="testcase3"/>
+        </methods>
+      </class> <!-- script.bangmaiche.Xml -->
+    </classes>
+  </test> <!-- Debug(failed) -->
+</suite> <!-- Failed suite [debug] -->

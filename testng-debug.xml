@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<suite name="iphone 6 plus 9.3.3">
+
+	<listeners>
+    	<listener class-name="listener.TestResultListener" />
+    	<listener class-name="listener.RetryListener" />
+    	<listener class-name="listener.PowerEmailableReporter" />
+	</listeners>
+  
+  <!-- <test name="faxian" preserve-order="true">
+    <parameter name = "port" value = "4723"/>
+ 	<parameter name = "udid" value = "9d2b5af54cc39ceba892c63ce9891a245fffe2e8"/>
+    <classes>  
+      <class name="script.faxian.CheXingDuiBiTest"/> 
+      	<methods>
+       	 <include name="faxian_chexingduibi_testCase4" />
+      	</methods>
+    </classes>  
+  </test> -->
+  
+  <test name="xinche" preserve-order="true">
+    <classes>  
+      <class name="script.xinche.CheXingShouCangTest"/>
+      <class name="script.xinche.TiaoJianXuanCheTest"/>
+      <class name="script.xinche.ZiPinPaiZongShuTest"/>
+    </classes>  
+  </test>
+
+</suite>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [iphone 6 plus 9.3.3]">
+  <listeners>
+    <listener class-name="listener.TestResultListener"/>
+    <listener class-name="listener.RetryListener"/>
+    <listener class-name="listener.PowerEmailableReporter"/>
+  </listeners>
+  <test name="xinche(failed)">
+    <classes>
+      <class name="script.xinche.TiaoJianXuanCheTest">
+        <methods>
+          <include name="xinche_tiaojianxuanche_testcase9"/>
+          <include name="xinche_tiaojianxuanche_testcase6"/>
+          <include name="xinche_tiaojianxuanche_testcase4"/>
+          <include name="xinche_tiaojianxuanche_testcase10"/>
+          <include name="xinche_tiaojianxuanche_testcase7"/>
+          <include name="xinche_tiaojianxuanche_testcase12"/>
+          <include name="xinche_tiaojianxuanche_testcase8"/>
+          <include name="xinche_tiaojianxuanche_testcase1"/>
+          <include name="xinche_tiaojianxuanche_testcase11"/>
+          <include name="xinche_tiaojianxuanche_testcase3"/>
+          <include name="xinche_tiaojianxuanche_testcase2"/>
+          <include name="xinche_tiaojianxuanche_testcase5"/>
+        </methods>
+      </class> <!-- script.xinche.TiaoJianXuanCheTest -->
+      <class name="script.xinche.CheXingShouCangTest">
+        <methods>
+          <include name="xinche_chexingshoucang_testcase9"/>
+          <include name="beforeSuite"/>
+          <include name="xinche_chexingshoucang_testcase2"/>
+          <include name="xinche_chexingshoucang_testcase10"/>
+          <include name="xinche_chexingshoucang_testcase6"/>
+          <include name="xinche_chexingshoucang_testcase3"/>
+          <include name="xinche_chexingshoucang_testcase4"/>
+          <include name="xinche_chexingshoucang_testcase1"/>
+          <include name="xinche_chexingshoucang_testcase7"/>
+          <include name="xinche_chexingshoucang_testcase8"/>
+          <include name="xinche_chexingshoucang_testcase5"/>
+        </methods>
+      </class> <!-- script.xinche.CheXingShouCangTest -->
+      <class name="script.xinche.ZiPinPaiZongShuTest">
+        <methods>
+          <include name="xinche_zipinpaizongshu_testcase16"/>
+          <include name="xinche_zipinpaizongshu_testcase14"/>
+          <include name="xinche_zipinpaizongshu_testcase15"/>
+          <include name="xinche_zipinpaizongshu_testcase2"/>
+          <include name="xinche_zipinpaizongshu_testcase1"/>
+          <include name="xinche_zipinpaizongshu_testcase4"/>
+          <include name="xinche_zipinpaizongshu_testcase3"/>
+          <include name="xinche_zipinpaizongshu_testcase11"/>
+          <include name="xinche_zipinpaizongshu_testcase9"/>
+          <include name="xinche_zipinpaizongshu_testcase6"/>
+          <include name="xinche_zipinpaizongshu_testcase10"/>
+          <include name="xinche_zipinpaizongshu_testcase5"/>
+          <include name="xinche_zipinpaizongshu_testcase8"/>
+          <include name="xinche_zipinpaizongshu_testcase13"/>
+          <include name="xinche_zipinpaizongshu_testcase7"/>
+          <include name="xinche_zipinpaizongshu_testcase12"/>
+        </methods>
+      </class> <!-- script.xinche.ZiPinPaiZongShuTest -->
+    </classes>
+  </test> <!-- xinche(failed) -->
+</suite> <!-- Failed suite [iphone 6 plus 9.3.3] -->
