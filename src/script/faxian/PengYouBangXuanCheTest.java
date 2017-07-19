@@ -32,7 +32,7 @@ public class PengYouBangXuanCheTest extends AppTestSuite {
 		Assert.assertTrue(Common.checkTextExist(driver,"发起投票"), "检查返回朋友帮选车页面");
 		//点击返回发现首页
 		Common.back(driver);
-		FaXian.swipeToLeft(driver);
+		FaXian.swipeToRight(driver);
 	}
 	
 	/** 
@@ -113,7 +113,7 @@ public class PengYouBangXuanCheTest extends AppTestSuite {
 		Assert.assertTrue(Common.checkTextExist(driver,"发起投票"), "检查返回朋友帮选车页面");
 		//点击返回发现首页
 		Common.back(driver);
-		FaXian.swipeToLeft(driver);
+		FaXian.swipeToRight(driver);
 	}
 	
 	/** 
@@ -138,7 +138,7 @@ public class PengYouBangXuanCheTest extends AppTestSuite {
 		Assert.assertTrue(Common.checkTextExist(driver,"发起投票"), "检查返回朋友帮选车页面");
 		//点击返回发现首页
 		Common.back(driver);
-		FaXian.swipeToLeft(driver);
+		FaXian.swipeToRight(driver);
 	}
 		
 	/** 
@@ -219,7 +219,7 @@ public class PengYouBangXuanCheTest extends AppTestSuite {
 		Assert.assertTrue(Common.checkTextExist(driver,"发起投票"), "检查返回朋友帮选车页面");
 		//点击返回发现首页
 		Common.back(driver);
-		FaXian.swipeToLeft(driver);
+		FaXian.swipeToRight(driver);
 	}
 	
 	/** 
@@ -243,7 +243,7 @@ public class PengYouBangXuanCheTest extends AppTestSuite {
 		  Assert.assertTrue(Common.checkXpathNotExist(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]"),"检查删除投票成功");
 		  //返回首页
 		  Common.back(driver);
-		  FaXian.swipeToLeft(driver);
+		  FaXian.swipeToRight(driver);
   }
 	
 
