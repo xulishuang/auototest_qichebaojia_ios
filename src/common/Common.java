@@ -340,6 +340,25 @@ public class Common {
     }
     
     /**
+     * UIAPicker控件设值
+     */
+    @SuppressWarnings("rawtypes")
+	public static void selectValue(IOSDriver driver, String text){
+    	WebElement el=driver.findElement(By.className("UIAPickerWheel"));
+    	el.sendKeys(text);	
+    }
+    
+//    /**
+//     * UIAPicker控件设值
+//     */
+//    @SuppressWarnings("rawtypes")
+//	public static void selectValue(IOSDriver driver, String text, int index){
+//    	List list=driver.findElements(By.className("UIAPickerWheel"));
+//    	WebElement el=(WebElement) list.get(1);
+//    	el.sendKeys(text);	
+//    }
+    
+    /**
      * 显示等待
      * 
      * @param driver
