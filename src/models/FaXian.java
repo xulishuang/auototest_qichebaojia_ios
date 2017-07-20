@@ -114,6 +114,36 @@ public class FaXian {
 	}
 	
 	/** 
+	 * @function 进入智能选车页面
+	 * @param driver
+	 * @author xulishuang
+	 * @time 2017-7-19
+	 * 
+	 */ 
+	@SuppressWarnings("rawtypes")
+	public static void enterZhiNengXuanChePage(IOSDriver driver){
+		//点击发现
+		Common.touchText(driver, "发现");
+		//点击智能选车
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[7]");
+	}
+	
+	/** 
+	 * @function 进入摇号查询页面
+	 * @param driver
+	 * @author xulishuang
+	 * @time 2017-7-19
+	 * 
+	 */ 
+	@SuppressWarnings("rawtypes")
+	public static void enterYaoHaoChaXunPage(IOSDriver driver){
+		//点击发现
+		Common.touchText(driver, "发现");
+		//点击智能选车
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[4]");
+	}
+	
+	/** 
 	 * @function 进入朋友帮选车页面
 	 * @param driver
 	 * @author xulishuang
@@ -247,7 +277,7 @@ public class FaXian {
 	}
 	
 	/** 
-	 * @function 朋友帮选车-左滑显示车型对比
+	 * @function 朋友帮选车-右滑显示车型对比
 	 * @initial 朋友帮选车入口
 	 * @param driver
 	 * @author xulishuang
@@ -255,8 +285,8 @@ public class FaXian {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void swipeToLeft(IOSDriver driver){
-		//屏幕中部左滑
+	public static void swipeToRight(IOSDriver driver){
+		//屏幕中部右滑
 		int width = driver.manage().window().getSize().width;  
 		int height = driver.manage().window().getSize().height;
 		driver.swipe(width/10, height/2, width * 9/10, height/2, 500);
