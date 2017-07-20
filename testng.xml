@@ -1,10 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>  
-<suite name="debug">
+<suite name="iphone 6 plus 8.1.2">
+
+	<listeners>
+    	<listener class-name="listener.TestResultListener" />
+    	<listener class-name="listener.RetryListener" />
+    	<listener class-name="listener.PowerEmailableReporter" />
+	</listeners>
+	
+ 	<test name="xinche" preserve-order="true">
+    	<classes>  
+      		<class name="script.xinche.CheXingshouCangTest"/>
+      		<class name="script.xinche.JiangJiaPaiHangTest"/>
+      		<class name="script.xinche.TiaoJianXuanCheTest"/>
+      		<class name="script.xinche.ZiPinPaiJingXiaoShangTest"/>
+      		<class name="script.xinche.ZiPinPaiZongShuTest"/>
+    	</classes>  
+  	</test>
   
-  <test name="Debug" preserve-order="true">
-    <classes>  
-      <class name="script.bangmaiche.Xml"/>
-    </classes>  
-  </test>
+ 	<test name="ershouche" preserve-order="true">
+    	<classes>  
+			<class name="script.ershouche.HomePageTest"/>
+      		<class name="script.ershouche.CheYuanXiangQingTest"/>
+    	</classes>  
+  	</test>
+  	
+  	<test name="faxian" preserve-order="true">
+    	<classes>  
+			<class name="script.faxian.CheXingDuiBiTest"/>
+      		<class name="script.faxian.GouCheJiSuanQiTest"/>
+      		<class name="script.faxian.PengYouBangXuanCheTest"/>
+      		<class name="script.faxian.YaoHaoChaXunTest"/>
+      		<class name="script.faxian.ZhiNengXuanCheTest"/>
+    	</classes>  
+  	</test>
+  	
+  	<test name="bangmaiche" preserve-order="true">
+    	<classes>  
+			<class name="script.bangmaiche.HomePageTest"/>
+    	</classes>  
+  	</test>
 
 </suite>
