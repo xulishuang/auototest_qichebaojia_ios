@@ -37,7 +37,7 @@ public class FaXian {
 	}
 	
 	/** 
-	 * @function 清空“发现-车型对比”中添加两种车款
+	 * @function “发现-车型对比”中添加两种车款
 	 * @param driver
 	 * @author xulishuang
 	 * @time 2017-5-31
@@ -59,7 +59,7 @@ public class FaXian {
 	
 	
 	/** 
-	 * @function 清空“发现-车型对比”中添加两种车型
+	 * @function “发现-车型对比”中添加两种车型
 	 * @param driver
 	 * @author xulishuang
 	 * @time 2017-5-31
