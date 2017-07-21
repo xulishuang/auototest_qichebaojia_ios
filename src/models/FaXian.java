@@ -67,14 +67,14 @@ public class FaXian {
 	 */
 	@SuppressWarnings("rawtypes")
 	public static void addModels(IOSDriver driver) throws InterruptedException{
-		//添加两种车款
-	    Common.touchText(driver, "添加车款");
-	    Common.touchText(driver, "奥迪");
-	    Common.touchText(driver, "奥迪A4L");
-        
-	    Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]");
-	    Common.touchText(driver, "奥迪");
-	    Common.touchText(driver, "奥迪A6L");
+		//添加两种车型
+		Common.touchText(driver,"添加车型");
+		Common.touchText(driver,"奥迪");
+		Common.touchText(driver,"奥迪A4L");
+		  
+		Common.touchText(driver,"添加车型");
+		Common.touchText(driver,"奥迪");
+		Common.touchText(driver,"奥迪A6L");
 	}
 	
 	/** 
