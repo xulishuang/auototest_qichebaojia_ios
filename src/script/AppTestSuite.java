@@ -51,6 +51,9 @@ public class AppTestSuite {
 	public void afterMethod() throws InterruptedException {
 		if(Common.checkTextExist(driver, "nav right close")){
 			Common.touchText(driver, "nav right close");
+			if(Common.checkTextExist(driver, "不保存")){
+				Common.touchText(driver, "不保存");
+			}
 		}
 		  
 		while(Common.checkTextExist(driver, "navBackButton nor")||Common.checkTextExist(driver,"old navBackButton nor")){
