@@ -9,7 +9,7 @@
 	
  	<test name="xinche" preserve-order="true">
     	<classes>  
-      		<class name="script.xinche.CheXingshouCangTest"/>
+      		<class name="script.xinche.CheXingShouCangTest"/>
       		<class name="script.xinche.JiangJiaPaiHangTest"/>
       		<class name="script.xinche.TiaoJianXuanCheTest"/>
       		<class name="script.xinche.ZiPinPaiJingXiaoShangTest"/>
