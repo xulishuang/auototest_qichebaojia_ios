@@ -194,7 +194,7 @@ public class ZiPinPaiJingXiaoShangTest extends AppTestSuite{
 		  //进入子品牌经销商详情页面
 		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]");
 		  //点击地图(位于页面中部)
-		  Common.pressLocation(driver, Common.getScreenWidth(driver)/2, Common.getScreenHeight(driver)/2);
+		  Common.touchLocation(driver, Common.getScreenWidth(driver)/2, Common.getScreenHeight(driver)/2);
 		  //点击免费咨询
 		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableCell[1]/UIAButton[1]");
 		  //检查弹出呼叫提示

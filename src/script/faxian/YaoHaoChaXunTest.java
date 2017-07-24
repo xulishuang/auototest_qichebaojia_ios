@@ -136,7 +136,7 @@ public class YaoHaoChaXunTest extends AppTestSuite{
 		  //进入摇号查询
 		  FaXian.enterYaoHaoChaXunPage(driver);
 		  //点击编辑
-		  Common.pressLocation(driver,410,40);//通过坐标点击
+		  Common.touchTopRight(driver);//通过坐标点击编辑
 		  //点击删除已添加的两个编号
 		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[2]/UIAButton[1]");
 		  Common.touchText(driver, "删除");

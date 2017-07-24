@@ -16,7 +16,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 		Common.touchText(driver, "新车");
 	    Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[4]");
 	    //点击重置
-	    Common.touchText(driver,"重置");
+	    Common.touchTopRight(driver);
 	    //点击小型车、日系、合资
 	    Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[21]");
 	    Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[33]");
@@ -138,7 +138,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 		Common.touchText(driver, "新车");
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[4]");
 		//点击重置
-	    Common.touchText(driver,"重置");
+	    Common.touchTopRight(driver);
 	    //点击小型车、日系、合资
 	    Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[21]");
 	    Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[33]");
@@ -147,7 +147,8 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	    Assert.assertTrue(Common.checkIsSelected(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[33]"), "选中");
 	    Assert.assertTrue(Common.checkIsSelected(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[40]"), "选中");  	
 	    //点击重置
-	    Common.touchText(driver, "重置");
+//	    Common.touchText(driver, "重置");
+	    Common.touchTopRight(driver);
 	   //点击重置
 	    Assert.assertFalse(Common.checkIsSelected(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[21]"), "不选中");
 	    Assert.assertFalse(Common.checkIsSelected(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[33]"), "不选中");
@@ -200,7 +201,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	public void xinche_tiaojianxuanche_testcase9() throws Exception{  
 		//进入条件选车
 		XinChe.enterTiaoJianXuanChePage(driver);
-		Common.touchText(driver, "重置");
+		Common.touchTopRight(driver);
 		//进入结果页面
 	    Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAButton[2]");
 	    //点击某一车型
@@ -216,7 +217,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	public void xinche_tiaojianxuanche_testcase10() throws Exception{  
 		//进入条件选车
 		XinChe.enterTiaoJianXuanChePage(driver);
-		Common.touchText(driver,"重置");
+		Common.touchTopRight(driver);
 		//进入结果页面
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAButton[2]");
 		//点击某一车型
@@ -241,7 +242,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	public void xinche_tiaojianxuanche_testcase11() throws Exception{  
 		//进入条件选车
 		XinChe.enterTiaoJianXuanChePage(driver);
-	    Common.touchText(driver,"重置");
+	    Common.touchTopRight(driver);
 	    //选择小型车、手动挡、排量1.3L以下
 	    Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[21]");
 	    Common.swipeToUp(driver, 500, 1);
@@ -275,7 +276,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	public void xinche_tiaojianxuanche_testcase12() throws Exception{  
 		//进入条件选车
 		XinChe.enterTiaoJianXuanChePage(driver);
-		Common.touchText(driver,"重置");
+		Common.touchTopRight(driver);
 		//进入结果页面
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAButton[2]");
 		//点击“发帖问问网友"

@@ -71,7 +71,7 @@ public class ZhiNengXuanCheTest extends AppTestSuite{
 		  //获得当前结果
 		  String text1=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAButton[2]"));
 		  //点击重置
-		  Common.pressLocation(driver, 410, 40);//由于找不到重置元素，通过坐标进行点击
+		  Common.touchTopRight(driver);//由于找不到重置元素，通过坐标进行点击
 		  //获得重置后结果
 		  String text2=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAButton[2]"));
 		  //检查清空已选中标签

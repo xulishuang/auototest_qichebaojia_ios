@@ -71,7 +71,7 @@ public class OpenTopicTest extends AppTestSuite{
 		  //点击从相册选择照片
 		  Common.touchText(driver, "ic add nor");
 		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[2]");//点击从相册选择
-		  Common.pressLocation(driver,100,120);//通过坐标选择照片
+		  Common.touchLocation(driver,100,120);//通过坐标选择照片
 		  Common.touchText(driver, "完成");//点击完成
 		  //点击提醒谁看
 		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[4]");

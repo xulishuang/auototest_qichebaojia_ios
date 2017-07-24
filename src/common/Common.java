@@ -434,8 +434,13 @@ public class Common {
     }
     
     @SuppressWarnings("rawtypes")
-	public static void pressLocation(IOSDriver driver, int x, int y){
+	public static void touchLocation(IOSDriver driver, int x, int y){
     	driver.tap(1, x, y, 100);
+    }
+    
+    @SuppressWarnings("rawtypes")
+	public static void touchTopRight(IOSDriver driver){
+    	Common.touchLocation(driver,410,40); //iphone 6 plus
     }
 
 }
