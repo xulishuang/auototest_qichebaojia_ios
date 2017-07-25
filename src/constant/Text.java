@@ -1,6 +1,8 @@
 package constant;
 
 public class Text {
+	public static final String ACCOUNT="xulishuang";//登录账号
+	public static final String PASSWORD="20090222";//登录账号
 	public static final String NAME="xiaohong";//测试用
 	public static final String PHONE="13666666666";//测试用
 	public static final String PRICE="20";//测试用
