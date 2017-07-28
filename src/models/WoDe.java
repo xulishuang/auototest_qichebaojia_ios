@@ -201,7 +201,7 @@ public class WoDe {
 		//清空浏览记录
 		if (Common.checkXpathExist(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]")){
 			Common.touchTopRight(driver);
-			Common.touchText(driver,"删除");
+			Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[4]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");
 		}
 		//返回首页
 		Common.back(driver);
@@ -223,7 +223,7 @@ public class WoDe {
 		//清空浏览记录
 		if (Common.checkXpathExist(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]")){
 			Common.touchTopRight(driver);
-			Common.touchText(driver, "删除");
+			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[4]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");
 		}
 		//返回首页
 		Common.back(driver);
