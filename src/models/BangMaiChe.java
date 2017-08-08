@@ -74,7 +74,8 @@ public class BangMaiChe {
 		//输入内容
 		Common.sendText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATextView[1]"), "奥迪Q5空间大吗");
 		//点击提交
-		Common.touchText(driver, "提交");
+//		Common.touchText(driver, "发布");
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[3]");
 	}
 	
 	/** 
@@ -100,7 +101,24 @@ public class BangMaiChe {
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[4]/UIAButton[1]");
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[4]/UIAButton[2]");
 		//点击发布
-		Common.touchText(driver,"提交");
+//		Common.touchText(driver,"发布");
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[3]");
+	}
+	
+	/** 
+	 * @function 帮买车-添加用户关注
+	 * @param driver
+	 * @author xulishuang
+	 * @time 2017-7-25
+	 * 
+	 */
+	@SuppressWarnings("rawtypes")
+	public static void addFollow(IOSDriver driver) throws InterruptedException{
+		Common.touchText(driver, "帮买车");
+		Common.touchText(driver, "最新");
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIATableView[1]/UIATableCell[1]/UIAButton[1]");
+		Common.touchText(driver, "btn guanzhu nor");
+		Common.back(driver);
 	}
 
 }
