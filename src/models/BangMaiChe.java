@@ -72,7 +72,7 @@ public class BangMaiChe {
 		//点击话题icon
 		Common.touchText(driver, "话题");
 		//输入内容
-		Common.sendText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATextView[1]"), "奥迪Q5空间大吗");
+		Common.sendText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATextView[1]"), "签到啦啦啦啦");
 		//点击提交
 //		Common.touchText(driver, "发布");
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[3]");
@@ -113,12 +113,51 @@ public class BangMaiChe {
 	 * 
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void addFollow(IOSDriver driver) throws InterruptedException{
+	public static void addUserFollow(IOSDriver driver) throws InterruptedException{
 		Common.touchText(driver, "帮买车");
 		Common.touchText(driver, "最新");
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIATableView[1]/UIATableCell[1]/UIAButton[1]");
 		Common.touchText(driver, "btn guanzhu nor");
 		Common.back(driver);
+	}
+	
+	/** 
+	 * @function 帮买车-添加话题收藏
+	 * @param driver
+	 * @author xulishuang
+	 * @time 2017-7-25
+	 * 
+	 */
+	@SuppressWarnings("rawtypes")
+	public static void addTopicCollection(IOSDriver driver) throws InterruptedException{
+		Common.touchText(driver, "帮买车");
+		Common.touchText(driver, "最新");
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIATableView[1]/UIATableCell[1]/UIAStaticText[1]");
+		Common.touchText(driver, "unfav nor");
+		Common.back(driver);
+	}
+	
+	/** 
+	 * @function 帮买车-添加话题草稿
+	 * @param driver
+	 * @author xulishuang
+	 * @time 2017-7-25
+	 * 
+	 */
+	@SuppressWarnings("rawtypes")
+	public static void addTopicDraft(IOSDriver driver) throws InterruptedException{
+		//点击最新
+		Common.touchText(driver,"最新");
+		//点击发帖
+		Common.touchText(driver,"发帖");
+		//点击话题icon
+		Common.touchText(driver, "话题");
+		//输入内容
+		Common.sendText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATextView[1]"), "签到啦啦啦啦");
+		//点击取消
+		Common.touchText(driver, "取消");
+		//点击保存草稿
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]"); 
 	}
 
 }

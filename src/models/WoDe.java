@@ -58,6 +58,111 @@ public class WoDe {
 	}
 	
 	/** 
+	 * @function 进入“我的社区-关注”页面
+	 * @param driver
+	 * @author xulishuang
+	 * @time 2017-5-27
+	 * 
+	 */ 
+	@SuppressWarnings("rawtypes")
+	public static void enterFansPage(IOSDriver driver) throws InterruptedException{
+		//进入我的社区-话题
+		Common.touchText(driver,"我的");
+		Common.touchText(driver, "我的社区");
+		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIAButton[4]");
+	}
+	
+	/** 
+	 * @function 进入“我的社区-收藏夹”页面
+	 * @param driver
+	 * @author xulishuang
+	 * @time 2017-5-27
+	 * 
+	 */ 
+	@SuppressWarnings("rawtypes")
+	public static void enterTopicCollectionPage(IOSDriver driver) throws InterruptedException{
+		//进入我的社区-话题
+		Common.touchText(driver,"我的");
+		Common.touchText(driver, "我的社区");
+		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]");
+	}
+	
+	/** 
+	 * @function 进入“我的社区-草稿箱”页面
+	 * @param driver
+	 * @author xulishuang
+	 * @time 2017-5-27
+	 * 
+	 */ 
+	@SuppressWarnings("rawtypes")
+	public static void enterDraftsPage(IOSDriver driver) throws InterruptedException{
+		//进入我的社区-话题
+		Common.touchText(driver,"我的");
+		Common.touchText(driver, "我的社区");
+		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[2]");
+	}
+	
+	/** 
+	 * @function 进入“我的社区-收到的赞”页面
+	 * @param driver
+	 * @author xulishuang
+	 * @time 2017-5-27
+	 * 
+	 */ 
+	@SuppressWarnings("rawtypes")
+	public static void enterReceivedPraisePage(IOSDriver driver) throws InterruptedException{
+		//进入我的社区-话题
+		Common.touchText(driver,"我的");
+		Common.touchText(driver, "我的社区");
+		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[3]");
+	}
+	
+	/** 
+	 * @function 进入“我的社区-收到的评论”页面
+	 * @param driver
+	 * @author xulishuang
+	 * @time 2017-5-27
+	 * 
+	 */ 
+	@SuppressWarnings("rawtypes")
+	public static void enterReceivedCommentPage(IOSDriver driver) throws InterruptedException{
+		//进入我的社区-话题
+		Common.touchText(driver,"我的");
+		Common.touchText(driver, "我的社区");
+		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[4]");
+	}
+	
+	/** 
+	 * @function 进入“我的社区-提到我的”页面
+	 * @param driver
+	 * @author xulishuang
+	 * @time 2017-5-27
+	 * 
+	 */ 
+	@SuppressWarnings("rawtypes")
+	public static void enterMentionedMePage(IOSDriver driver) throws InterruptedException{
+		//进入我的社区-话题
+		Common.touchText(driver,"我的");
+		Common.touchText(driver, "我的社区");
+		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[5]");
+	}
+	
+	/** 
+	 * @function 进入“我的社区-社区通知”页面
+	 * @param driver
+	 * @author xulishuang
+	 * @time 2017-5-27
+	 * 
+	 */ 
+	@SuppressWarnings("rawtypes")
+	public static void enterCommunityNotificationPage(IOSDriver driver) throws InterruptedException{
+		//进入我的社区-话题
+		Common.touchText(driver,"我的");
+		Common.touchText(driver, "我的社区");
+		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[6]");
+	}
+	
+	/** 
 	 * @function 清空“我的社区-话题”中所有话题
 	 * @initial 话题页面
 	 * @param driver
@@ -110,13 +215,48 @@ public class WoDe {
 	 * @date 2017-7-26
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void setFollowssEmpty(IOSDriver driver) throws InterruptedException{
+	public static void setFollowsEmpty(IOSDriver driver) throws InterruptedException{
 		//清空评论
 		WoDe.enterFollowPage(driver);//点击评论
 		while(Common.checkXpathExist(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]")){
 			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]");
 			Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIAButton[1]");
 			Common.back(driver);
+			}
+		Common.multiBack(driver, 2);
+	}
+	
+	/**
+	 * @function 清空 我的社区-收藏夹 已收藏话题
+	 * @param driver
+	 * @throws InterruptedException
+	 * @author xulishuang
+	 * @date 2017-7-26
+	 */
+	@SuppressWarnings("rawtypes")
+	public static void setTopicCollectionEmpty(IOSDriver driver) throws InterruptedException{
+		//清空评论
+		WoDe.enterTopicCollectionPage(driver);//进入收藏夹
+		while(Common.checkTextExist(driver, "topic btn action 6 nor")){
+			Common.touchText(driver, "topic btn action 6 nor");
+			}
+		Common.multiBack(driver, 2);
+	}
+	
+	/**
+	 * @function 清空 我的社区-草稿箱 所有草稿
+	 * @param driver
+	 * @throws InterruptedException
+	 * @author xulishuang
+	 * @date 2017-7-26
+	 */
+	@SuppressWarnings("rawtypes")
+	public static void setDraftsEmpty(IOSDriver driver) throws InterruptedException{
+		//清空评论
+		WoDe.enterDraftsPage(driver);//进入草稿箱
+		while(Common.checkTextExist(driver, "删除")){
+			Common.touchText(driver, "删除");
+			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");
 			}
 		Common.multiBack(driver, 2);
 	}
