@@ -146,9 +146,8 @@ public class BangMaiChe {
 	 */
 	@SuppressWarnings("rawtypes")
 	public static void addTopicDraft(IOSDriver driver) throws InterruptedException{
-		//点击最新
+		Common.touchText(driver, "帮买车");
 		Common.touchText(driver,"最新");
-		//点击发帖
 		Common.touchText(driver,"发帖");
 		//点击话题icon
 		Common.touchText(driver, "话题");
