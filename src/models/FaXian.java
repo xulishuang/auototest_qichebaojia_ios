@@ -114,6 +114,19 @@ public class FaXian {
 	}
 	
 	/** 
+	 * @function 进入降价排行页面
+	 * @param driver
+	 * @author xulishuang
+	 * @time 2017-7-13
+	 * 
+	 */ 
+	@SuppressWarnings("rawtypes")
+	public static void enterJiangJiaPaiHangPage(IOSDriver driver){
+		Common.touchText(driver, "新车");
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[7]");
+	}
+	
+	/** 
 	 * @function 进入智能选车页面
 	 * @param driver
 	 * @author xulishuang
@@ -125,7 +138,7 @@ public class FaXian {
 		//点击发现
 		Common.touchText(driver, "发现");
 		//点击智能选车
-		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[7]");
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[8]");
 	}
 	
 	/** 
@@ -158,7 +171,7 @@ public class FaXian {
 	  int height = driver.manage().window().getSize().height;
 	  driver.swipe(width * 9/10, height/2, width/10, height/2, 500);
 	  //点击朋友帮选车
-	  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[9]");
+	  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[10]");
 	}
 	
 	/** 
