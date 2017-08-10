@@ -13,9 +13,8 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	@Test(priority = 1)
 	public void xinche_tiaojianxuanche_testcase1() throws Exception {
 		//进入条件选车
-		Common.touchText(driver, "新车");
-	    Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[4]");
-	    //点击重置
+		XinChe.enterTiaoJianXuanChePage(driver);
+		//点击重置
 	    Common.touchTopRight(driver);
 	    //点击小型车、日系、合资
 	    Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[21]");
@@ -34,8 +33,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	@Test(priority = 2)
 	  public void xinche_tiaojianxuanche_testcase2() throws Exception {
 		//进入条件选车
-		Common.touchText(driver, "新车");
-		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[4]");
+		XinChe.enterTiaoJianXuanChePage(driver);
 	    //点击更多选车条件
 		Common.swipeToUp(driver, 500, 1);
 		Common.touchText(driver, "更多选车条件");
@@ -70,8 +68,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	@Test(priority = 3)
 	public void xinche_tiaojianxuanche_testcase3() throws Exception{
 		//进入条件选车
-		Common.touchText(driver, "新车");
-		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[4]");
+		XinChe.enterTiaoJianXuanChePage(driver);
 		//点击更多选车条件
 		Common.swipeToUp(driver, 500, 1);
 		Common.touchText(driver, "更多选车条件");
@@ -89,8 +86,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	@Test(priority = 4)
 	public void xinche_tiaojianxuanche_testcase4() throws Exception{
 		//进入条件选车
-		Common.touchText(driver, "新车");
-		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[4]");
+		XinChe.enterTiaoJianXuanChePage(driver);
 		//点击更多选车条件
 		Common.swipeToUp(driver, 500, 1);
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[45]");
@@ -135,8 +131,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	@Test(priority = 5)
 	public void xinche_tiaojianxuanche_testcase5() throws Exception{  
 		//进入条件选车
-		Common.touchText(driver, "新车");
-		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[4]");
+		XinChe.enterTiaoJianXuanChePage(driver);
 		//点击重置
 	    Common.touchTopRight(driver);
 	    //点击小型车、日系、合资
