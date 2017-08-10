@@ -14,6 +14,40 @@ public class BangMaiChe {
 		this.driver=driver;
 	}
 	
+	/**
+	 * @function 进入普通发帖页面
+	 * @author xulishuang
+	 * @time 2017-8-10
+	 */
+	@SuppressWarnings("rawtypes")
+	public static void enterGeneralTopicPage(IOSDriver driver){
+		//点击进入帮买车
+		Common.touchText(driver,"帮买车");
+		//点击最新
+		Common.touchText(driver,"最新");
+		//点击发帖
+		Common.touchText(driver,"发帖");
+		//点击话题icon
+		Common.touchText(driver, "话题");
+	}
+	
+	/**
+	 * @function 进入投票发帖页面
+	 * @author xulishuang
+	 * @time 2017-8-10
+	 */
+	@SuppressWarnings("rawtypes")
+	public static void enterVoteTopicPage(IOSDriver driver){
+		//点击进入帮买车
+		Common.touchText(driver,"帮买车");
+		//点击最新
+		Common.touchText(driver,"最新");
+		//点击发帖
+		Common.touchText(driver,"发帖");
+		//点击投票icon
+		Common.touchText(driver, "投票");
+	}
+	
 	/** 
 	 * @function “帮买车—投票-车款投票”中添加两种车款
 	 * @param driver

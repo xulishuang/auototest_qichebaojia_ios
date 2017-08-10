@@ -1,5 +1,7 @@
 package models;
 
+import org.openqa.selenium.By;
+
 import common.Common;
 import io.appium.java_client.ios.IOSDriver;
 
@@ -218,11 +220,12 @@ public class WoDe {
 	public static void setFollowsEmpty(IOSDriver driver) throws InterruptedException{
 		//清空评论
 		WoDe.enterFollowPage(driver);//点击评论
-		while(Common.checkXpathExist(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]")){
-			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]");
-			Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIAButton[1]");
-			Common.back(driver);
-			}
+		while(Common.checkTextExist(driver, "myAttention xhgz nor")){
+			Common.touchText(driver, "myAttention xhgz nor");//若有相互关注，点击取消关注
+		}
+		while(Common.checkTextExist(driver, "myAttention ygz nor")){
+			Common.touchText(driver, "myAttention ygz nor");//若有已关注，点击取消关注
+		}
 		Common.multiBack(driver, 2);
 	}
 	
@@ -365,8 +368,9 @@ public class WoDe {
 		//进入浏览记录
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "浏览记录");
+		String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]/UIAStaticText[1]"));
 		//清空浏览记录
-		if (Common.checkXpathExist(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]")){
+		if (!text.equals("您现在还没有浏览任何车型,")){
 			Common.touchTopRight(driver);
 			Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[4]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");
 		}
@@ -388,7 +392,8 @@ public class WoDe {
 		Common.touchText(driver, "浏览记录");
 		Common.touchText(driver, "经销商");
 		//清空浏览记录
-		if (Common.checkXpathExist(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]")){
+		String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]/UIAStaticText[1]"));
+		if (!text.equals("您现在还没有浏览任何经销商,")){
 			Common.touchTopRight(driver);
 			Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[4]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");
 		}
@@ -410,12 +415,29 @@ public class WoDe {
 		Common.touchText(driver, "浏览记录");
 		Common.touchText(driver, "降价");
 		//清空浏览记录
-		if (Common.checkXpathExist(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]")){
+		String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]/UIAStaticText[1]"));
+		if (!text.equals("您现在还没有浏览任何降价,")){
 			Common.touchTopRight(driver);
 			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[4]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");
 		}
 		//返回首页
 		Common.back(driver);
+	}
+	
+	/** 
+	 * @function 检查进入他人主页页面
+	 * @param driver
+	 * @author xulishuang
+	 * @time 2017-8-9
+	 * 
+	 */
+	@SuppressWarnings("rawtypes")
+	public static boolean checkIsOtherHomepage(IOSDriver driver){
+		if(Common.checkTextExist(driver, "btn guanzhu nor")||Common.checkTextExist(driver, "btn yiguanzhu")||Common.checkTextExist(driver, "btn xhgz")){
+			return true;
+		}else{
+			return false;
+		}	
 	}
 
 }
