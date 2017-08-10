@@ -64,20 +64,7 @@ public class XinChe {
 	@SuppressWarnings("rawtypes")
 	public static void enterTiaoJianXuanChePage(IOSDriver driver){
 		Common.touchText(driver, "新车");
-		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[4]");
-	}
-	
-	/** 
-	 * @function 进入降价排行页面
-	 * @param driver
-	 * @author xulishuang
-	 * @time 2017-7-13
-	 * 
-	 */ 
-	@SuppressWarnings("rawtypes")
-	public static void enterJiangJiaPaiHangPage(IOSDriver driver){
-		Common.touchText(driver, "新车");
-		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[5]");
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[3]");
 	}
 	
 	/**
