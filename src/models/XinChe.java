@@ -90,8 +90,8 @@ public class XinChe {
 	public static void collectModels(IOSDriver driver){
 		//收藏车型
  		Common.touchText(driver,"新车");
- 		Common.touchSlideText(driver,"奥迪",10);
- 		Common.touchText(driver,"奥迪Q5");
+ 		Common.touchText(driver,"奥迪");
+ 		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[3]");//点击奥迪Q5
  		Common.touchText(driver,"unfav nor");
  		Common.back(driver);
  		Common.swipeToRight(driver, 500, 1);
@@ -108,10 +108,10 @@ public class XinChe {
 	public static void collectDealers(IOSDriver driver) throws InterruptedException{
 		//收藏经销商
  		Common.touchText(driver,"新车");
- 		Common.touchSlideText(driver,"奥迪",10);
- 		Common.touchText(driver,"奥迪Q5");
- 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]");
- 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]");
+ 		Common.touchText(driver,"奥迪");
+ 		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[3]");//点击奥迪Q5
+ 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[2]/UIAStaticText[1]");
+ 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAStaticText[1]");
  		Common.touchText(driver,"unfav nor");
  		Common.multiBack(driver,3);
  		Common.swipeToRight(driver, 500, 1);
@@ -128,9 +128,9 @@ public class XinChe {
 	public static void collectCars(IOSDriver driver) throws InterruptedException{
 		//收藏车款
  		Common.touchText(driver,"新车");
- 		Common.touchSlideText(driver,"奥迪",10);
- 		Common.touchText(driver,"奥迪Q5");
- 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]");
+ 		Common.touchText(driver,"奥迪");
+ 		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[3]");//点击奥迪Q5
+ 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[2]/UIAStaticText[1]");
  		Common.touchText(driver,"unfav nor");
  		Common.multiBack(driver,2);
  		Common.swipeToRight(driver, 500, 1);
