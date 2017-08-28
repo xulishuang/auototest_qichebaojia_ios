@@ -13,7 +13,7 @@ public class HomePageTest extends AppTestSuite{
 		 */	
 	
 	  @Test(priority = 1)
-	  public void bangmaiche_homepage_testcase1() throws Exception {
+	  public void bangmaiche_homepage_testcase1()  {
 		  //点击进入帮买车
 		  Common.touchText(driver,"帮买车");
 		  //点击推荐
@@ -36,7 +36,7 @@ public class HomePageTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 2)
-	  public void bangmaiche_homepage_testcase2() throws Exception {
+	  public void bangmaiche_homepage_testcase2()  {
 		  //点击进入帮买车
 		  Common.touchText(driver,"帮买车");
 		  //点击订阅
@@ -58,7 +58,7 @@ public class HomePageTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 3)
-	  public void bangmaiche_homepage_testcase3() throws Exception {
+	  public void bangmaiche_homepage_testcase3()  {
 		  //点击进入帮买车
 		  Common.touchText(driver,"帮买车");
 		  //点击订阅
@@ -84,7 +84,7 @@ public class HomePageTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 4)
-	  public void bangmaiche_homepage_testcase4() throws Exception {
+	  public void bangmaiche_homepage_testcase4()  {
 		  //点击进入帮买车
 		  Common.touchText(driver,"帮买车");
 		  //点击订阅
@@ -105,7 +105,7 @@ public class HomePageTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 5)
-	  public void bangmaiche_homepage_testcase5() throws Exception {
+	  public void bangmaiche_homepage_testcase5()  {
 		  //点击进入帮买车
 		  Common.touchText(driver,"帮买车");
 		  //点击订阅
@@ -129,7 +129,7 @@ public class HomePageTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 6)
-	  public void bangmaiche_homepage_testcase6() throws Exception {
+	  public void bangmaiche_homepage_testcase6()  {
 		  //点击进入帮买车
 		  Common.touchText(driver,"帮买车");
 		  //点击订阅

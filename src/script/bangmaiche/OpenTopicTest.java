@@ -13,7 +13,7 @@ public class OpenTopicTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 1)
-	  public void bangmaiche_opentopic_testcase1() throws Exception {
+	  public void bangmaiche_opentopic_testcase1()  {
 		  //点击进入帮买车
 		  Common.touchText(driver,"帮买车");
 		  //点击最新
@@ -49,7 +49,7 @@ public class OpenTopicTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 2)
-	  public void bangmaiche_opentopic_testcase2() throws Exception {
+	  public void bangmaiche_opentopic_testcase2()  {
 		  //清空话题
 		  WoDe.setTopicEmpty(driver);
 		  //点击进入帮买车
@@ -108,7 +108,7 @@ public class OpenTopicTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 3)
-	  public void bangmaiche_opentopic_testcase3() throws Exception {
+	  public void bangmaiche_opentopic_testcase3()  {
 		  //清空话题
 		  WoDe.setTopicEmpty(driver);
 		  //点击进入帮买车
@@ -147,7 +147,7 @@ public class OpenTopicTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 4)
-	  public void bangmaiche_opentopic_testcase4() throws Exception {
+	  public void bangmaiche_opentopic_testcase4()  {
 		  //清空话题
 		  WoDe.setTopicEmpty(driver);
 		  //点击进入帮买车
@@ -181,7 +181,7 @@ public class OpenTopicTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 5)
-	  public void bangmaiche_opentopic_testcase5() throws Exception {
+	  public void bangmaiche_opentopic_testcase5()  {
 		  //清空话题
 		  WoDe.setTopicEmpty(driver);
 		  //点击进入帮买车

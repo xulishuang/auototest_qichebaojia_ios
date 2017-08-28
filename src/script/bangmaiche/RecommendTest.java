@@ -13,7 +13,7 @@ public class RecommendTest extends AppTestSuite {
 		 * 
 		 */	
 	  @Test(priority = 1)
-	  public void bangmaiche_recommend_testcase1() throws Exception {
+	  public void bangmaiche_recommend_testcase1()  {
 		  //进入推荐页面
 		  Common.touchText(driver,"帮买车");
 		  Common.touchText(driver,"推荐");
@@ -35,7 +35,7 @@ public class RecommendTest extends AppTestSuite {
 		 * 
 		 */	
 	  @Test(priority = 2)
-	  public void bangmaiche_recommend_testcase2() throws Exception {
+	  public void bangmaiche_recommend_testcase2()  {
 		  //进入推荐页面
 		  Common.touchText(driver,"帮买车");
 		  Common.touchText(driver,"推荐");
@@ -76,7 +76,7 @@ public class RecommendTest extends AppTestSuite {
 		 * 
 		 */	
 	  @Test(priority = 3)
-	  public void bangmaiche_recommend_testcase3() throws Exception {
+	  public void bangmaiche_recommend_testcase3()  {
 		  //进入推荐页面
 		  Common.touchText(driver,"帮买车");
 		  Common.touchText(driver,"推荐");
@@ -118,7 +118,7 @@ public class RecommendTest extends AppTestSuite {
 		 * 
 		 */	
 	  @Test(priority = 4)
-	  public void bangmaiche_recommend_testcase4() throws Exception {
+	  public void bangmaiche_recommend_testcase4()  {
 		  //进入推荐页面
 		  Common.touchText(driver,"帮买车");
 		  Common.touchText(driver,"推荐");
@@ -155,7 +155,7 @@ public class RecommendTest extends AppTestSuite {
 		 * 
 		 */	
 	  @Test(priority = 5)
-	  public void bangmaiche_recommend_testcase5() throws Exception {
+	  public void bangmaiche_recommend_testcase5()  {
 		  
 	  }
 	  
@@ -164,7 +164,7 @@ public class RecommendTest extends AppTestSuite {
 		 * 
 		 */	
 	  @Test(priority = 6)
-	  public void bangmaiche_recommend_testcase6() throws Exception {
+	  public void bangmaiche_recommend_testcase6()  {
 		  //进入推荐页面
 		  Common.touchText(driver,"帮买车");
 		  Common.touchText(driver,"推荐");
@@ -181,7 +181,7 @@ public class RecommendTest extends AppTestSuite {
 		 * 
 		 */	
 	  @Test(priority = 7)
-	  public void bangmaiche_recommend_testcase7() throws Exception {
+	  public void bangmaiche_recommend_testcase7()  {
 		  //进入推荐页面
 		  Common.touchText(driver,"帮买车");
 		  Common.touchText(driver,"推荐");
@@ -198,7 +198,7 @@ public class RecommendTest extends AppTestSuite {
 		 * 
 		 */	
 	  @Test(priority = 8)
-	  public void bangmaiche_recommend_testcase8() throws Exception {
+	  public void bangmaiche_recommend_testcase8()  {
 		  //进入推荐页面
 		  Common.touchText(driver,"帮买车");
 		  Common.touchText(driver,"推荐");
