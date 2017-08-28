@@ -14,7 +14,7 @@ public class ZiPinPaiJingXiaoShangTest extends AppTestSuite{
 		 *  
 		 */	
 	  @Test(priority = 1)
-	  public void xinche_zipinpaijingxiaoshang_testcase1() throws Exception {
+	  public void xinche_zipinpaijingxiaoshang_testcase1()  {
 		  //进入子品牌经销商页面
 		  XinChe.enterZiPinPaiJingXiaoShangPage(driver);
 		  //检查进入子品牌经销商页面
@@ -35,7 +35,7 @@ public class ZiPinPaiJingXiaoShangTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 2)
-	  public void xinche_zipinpaijingxiaoshang_testcase2() throws Exception { 
+	  public void xinche_zipinpaijingxiaoshang_testcase2()  { 
 		  //进入子品牌经销商页面
 		  XinChe.enterZiPinPaiJingXiaoShangPage(driver);
 		  //点击贷款
@@ -57,7 +57,7 @@ public class ZiPinPaiJingXiaoShangTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 3)
-	  public void xinche_zipinpaijingxiaoshang_testcase3() throws Exception {
+	  public void xinche_zipinpaijingxiaoshang_testcase3()  {
 		  //进入子品牌经销商页面
 		  XinChe.enterZiPinPaiJingXiaoShangPage(driver);
 		  //点击询底价
@@ -79,7 +79,7 @@ public class ZiPinPaiJingXiaoShangTest extends AppTestSuite{
 		 *  
 		 */	
 	  @Test(priority = 4)
-	  public void xinche_zipinpaijingxiaoshang_testcase4() throws Exception {
+	  public void xinche_zipinpaijingxiaoshang_testcase4()  {
 		  //进入子品牌经销商页面
 		  XinChe.enterZiPinPaiJingXiaoShangPage(driver);
 		  //点击排序
@@ -115,7 +115,7 @@ public class ZiPinPaiJingXiaoShangTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 5)
-	  public void xinche_zipinpaijingxiaoshang_testcase5() throws Exception { 
+	  public void xinche_zipinpaijingxiaoshang_testcase5()  { 
 		  //进入子品牌经销商页面
 		  XinChe.enterZiPinPaiJingXiaoShangPage(driver);
 		  //进入子品牌经销商详情页面
@@ -140,7 +140,7 @@ public class ZiPinPaiJingXiaoShangTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 6)
-	  public void xinche_zipinpaijingxiaoshang_testcase6() throws Exception { 
+	  public void xinche_zipinpaijingxiaoshang_testcase6()  { 
 		  //进入子品牌经销商页面
 		  XinChe.enterZiPinPaiJingXiaoShangPage(driver);
 		  //进入子品牌经销商详情页面
@@ -161,7 +161,7 @@ public class ZiPinPaiJingXiaoShangTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 7)
-	  public void xinche_zipinpaijingxiaoshang_testcase7() throws Exception {
+	  public void xinche_zipinpaijingxiaoshang_testcase7()  {
 		  //进入子品牌经销商页面
 		  XinChe.enterZiPinPaiJingXiaoShangPage(driver);
 		  //进入子品牌经销商详情页面
@@ -188,7 +188,7 @@ public class ZiPinPaiJingXiaoShangTest extends AppTestSuite{
 		 *  
 		 */	
 	  @Test(priority = 8)
-	  public void xinche_zipinpaijingxiaoshang_testcase8() throws Exception {
+	  public void xinche_zipinpaijingxiaoshang_testcase8()  {
 		  //进入子品牌经销商页面
 		  XinChe.enterZiPinPaiJingXiaoShangPage(driver);
 		  //进入子品牌经销商详情页面
@@ -215,7 +215,7 @@ public class ZiPinPaiJingXiaoShangTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 9)
-	  public void xinche_zipinpaijingxiaoshang_testcase9() throws Exception {
+	  public void xinche_zipinpaijingxiaoshang_testcase9()  {
 		  //进入子品牌经销商页面
 		  XinChe.enterZiPinPaiJingXiaoShangPage(driver);
 		  //进入子品牌经销商详情页面
@@ -251,7 +251,7 @@ public class ZiPinPaiJingXiaoShangTest extends AppTestSuite{
 		 *  
 		 */	
 	  @Test(priority = 10)
-	  public void xinche_zipinpaijingxiaoshang_testcase10() throws Exception {
+	  public void xinche_zipinpaijingxiaoshang_testcase10()  {
 		  //进入子品牌经销商页面
 		  XinChe.enterZiPinPaiJingXiaoShangPage(driver);
 		  //进入子品牌经销商详情页面
@@ -272,7 +272,7 @@ public class ZiPinPaiJingXiaoShangTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 11)
-	  public void xinche_zipinpaijingxiaoshang_testcase11() throws Exception {
+	  public void xinche_zipinpaijingxiaoshang_testcase11()  {
 		  //进入子品牌经销商页面
 		  XinChe.enterZiPinPaiJingXiaoShangPage(driver);
 		  //进入子品牌经销商详情页面
@@ -315,7 +315,7 @@ public class ZiPinPaiJingXiaoShangTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 12)
-	  public void xinche_zipinpaijingxiaoshang_testcase12() throws Exception {
+	  public void xinche_zipinpaijingxiaoshang_testcase12()  {
 		  //进入子品牌经销商页面
 		  XinChe.enterZiPinPaiJingXiaoShangPage(driver);
 		  //进入子品牌经销商详情页面

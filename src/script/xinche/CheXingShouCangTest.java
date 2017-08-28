@@ -15,7 +15,7 @@ public class CheXingShouCangTest extends AppTestSuite{
 	 *  
 	 */
 	@Test
-	public void xinche_chexingshoucang_testcase1() throws InterruptedException {
+	public void xinche_chexingshoucang_testcase1()  {
 		//清空车型收藏
 		WoDe.setModelsCollectionEmpty(driver);
 		//清空浏览历史
@@ -33,7 +33,7 @@ public class CheXingShouCangTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 2)
- 	public void xinche_chexingshoucang_testcase2() throws Exception {
+ 	public void xinche_chexingshoucang_testcase2()  {
  		//收藏车型
  		XinChe.collectModels(driver);
  		//进入车型收藏
@@ -52,7 +52,7 @@ public class CheXingShouCangTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 3)
- 	public void xinche_chexingshoucang_testcase3() throws Exception{
+ 	public void xinche_chexingshoucang_testcase3() {
  		//清空浏览历史
  		WoDe.setModelsBrowseEmpty(driver);
  		//进入车型收藏
@@ -68,7 +68,7 @@ public class CheXingShouCangTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 4)
- 	public void xinche_chexingshoucang_testcase4() throws Exception{
+ 	public void xinche_chexingshoucang_testcase4() {
  		//浏览车型
  		Common.touchText(driver,"新车");
  		Common.touchText(driver,"奥迪");
@@ -88,7 +88,7 @@ public class CheXingShouCangTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 5)
- 	public void xinche_chexingshoucang_testcase5() throws Exception {
+ 	public void xinche_chexingshoucang_testcase5()  {
  		//清空二手车收藏
  		WoDe.setUsedCarCollectionEmpty(driver);
  		//进入车型收藏
@@ -106,7 +106,7 @@ public class CheXingShouCangTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 6)
- 	public void xinche_chexingshoucang_testcase6() throws Exception {
+ 	public void xinche_chexingshoucang_testcase6()  {
  		//收藏二手车
  		ErShouChe.collectUsedCar(driver);
  		//进入车型收藏
@@ -124,7 +124,7 @@ public class CheXingShouCangTest extends AppTestSuite{
 	 *  
 	 */  
  	@Test(priority = 7)
- 	public void xinche_chexingshoucang_testcase7() throws Exception {
+ 	public void xinche_chexingshoucang_testcase7()  {
  		//清空经销商收藏
  		WoDe.setDealersCollectionEmpty(driver);
  		//进入车型收藏
@@ -142,7 +142,7 @@ public class CheXingShouCangTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 8)
- 	public void xinche_chexingshoucang_testcase8() throws Exception {
+ 	public void xinche_chexingshoucang_testcase8()  {
  		//收藏经销商
  		XinChe.collectDealers(driver);
  		//进入车型收藏
@@ -160,7 +160,7 @@ public class CheXingShouCangTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 9)
- 	public void xinche_chexingshoucang_testcase9() throws Exception {
+ 	public void xinche_chexingshoucang_testcase9()  {
  		//清空车款收藏
  		WoDe.setCarCollectionEmpty(driver);
  		//进入车型收藏
@@ -178,7 +178,7 @@ public class CheXingShouCangTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 10)
- 	public void xinche_chexingshoucang_testcase10() throws Exception {
+ 	public void xinche_chexingshoucang_testcase10()  {
  		//进行车款收藏
  		XinChe.collectCars(driver);
  		//进入车型收藏
