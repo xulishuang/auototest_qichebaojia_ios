@@ -18,7 +18,7 @@ public class CheYuanXiangQingTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 1)
-	  public void ershouche_cheyuanxiangqing_testcase1() throws Exception {
+	  public void ershouche_cheyuanxiangqing_testcase1()  {
 		  //清空二手车收藏
 		  WoDe.setUsedCarCollectionEmpty(driver);
 		  //收藏车源
@@ -39,7 +39,7 @@ public class CheYuanXiangQingTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 2)
-	  public void ershouche_cheyuanxiangqing_testcase2() throws Exception {
+	  public void ershouche_cheyuanxiangqing_testcase2()  {
 		  //进入二手车车源详情页
 		  ErShouChe.enterUsedCarDetailPage(driver);
 		  //点击取消收藏
@@ -60,7 +60,7 @@ public class CheYuanXiangQingTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 3)
-	  public void ershouche_cheyuanxiangqing_testcase3() throws Exception {
+	  public void ershouche_cheyuanxiangqing_testcase3()  {
 		  //进入二手车车源详情页
 		  ErShouChe.enterUsedCarDetailPage(driver);
 		  //点击贷款一栏
@@ -104,7 +104,7 @@ public class CheYuanXiangQingTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 4)
-	  public void ershouche_cheyuanxiangqing_testcase4() throws Exception {
+	  public void ershouche_cheyuanxiangqing_testcase4()  {
 		  //进入二手车车源详情页
 		  ErShouChe.enterUsedCarDetailPage(driver);
 		  //查看新车参数
@@ -127,7 +127,7 @@ public class CheYuanXiangQingTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 5)
-	  public void ershouche_cheyuanxiangqing_testcase5() throws Exception {
+	  public void ershouche_cheyuanxiangqing_testcase5()  {
 		  //进入二手车车源详情页
 		  ErShouChe.enterUsedCarDetailPage(driver);
 		  //点击举报该车源
@@ -151,7 +151,7 @@ public class CheYuanXiangQingTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 6)
-	  public void ershouche_cheyuanxiangqing_testcase6() throws Exception {
+	  public void ershouche_cheyuanxiangqing_testcase6()  {
 		  //进入商家车源详情页
 		  ErShouChe.enterUsedCarDetailPage(driver);
 		  //点击经销商名称
@@ -177,7 +177,7 @@ public class CheYuanXiangQingTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 7)
-	  public void ershouche_cheyuanxiangqing_testcase7() throws Exception {
+	  public void ershouche_cheyuanxiangqing_testcase7()  {
 		  //进入二手车车源详情页
 		  ErShouChe.enterUsedCarDetailPage(driver);
 		  //点击同车系标签
@@ -193,7 +193,7 @@ public class CheYuanXiangQingTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 8)
-	  public void ershouche_cheyuanxiangqing_testcase8() throws Exception {
+	  public void ershouche_cheyuanxiangqing_testcase8()  {
 		  //进入二手车车源详情页
 		  ErShouChe.enterUsedCarDetailPage(driver);
 		  //点击砍价
@@ -217,7 +217,7 @@ public class CheYuanXiangQingTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 9)
-	  public void ershouche_cheyuanxiangqing_testcase9() throws Exception {
+	  public void ershouche_cheyuanxiangqing_testcase9()  {
 		  //进入二手车车源详情页
 		  ErShouChe.enterUsedCarDetailPage(driver);
 		  //点击免费咨询

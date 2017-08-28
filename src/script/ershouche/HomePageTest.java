@@ -16,7 +16,7 @@ public class HomePageTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 1)
-	  public void ershouche_homepage_testcase1() throws Exception {
+	  public void ershouche_homepage_testcase1()  {
 		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击地区
@@ -40,7 +40,7 @@ public class HomePageTest extends AppTestSuite{
 //		 * 
 //		 */	
 //	  @Test(priority = 2)
-//	  public void ershouche_homepage_testcase2() throws Exception {
+//	  public void ershouche_homepage_testcase2()  {
 //		  
 //	  }
 	    
@@ -49,7 +49,7 @@ public class HomePageTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 3)
-	  public void ershouche_homepage_testcase3() throws Exception {
+	  public void ershouche_homepage_testcase3()  {
 		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击帮买二手车
@@ -76,7 +76,7 @@ public class HomePageTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 4)
-	  public void ershouche_homepage_testcase4() throws Exception {
+	  public void ershouche_homepage_testcase4()  {
 		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击品牌下拉菜单
@@ -100,7 +100,7 @@ public class HomePageTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 5)
-	  public void ershouche_homepage_testcase5() throws Exception {
+	  public void ershouche_homepage_testcase5()  {
 		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击价格下拉菜单
@@ -129,7 +129,7 @@ public class HomePageTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 6)
-	  public void ershouche_homepage_testcase6() throws Exception {
+	  public void ershouche_homepage_testcase6()  {
 		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击筛选下拉菜单
@@ -153,7 +153,7 @@ public class HomePageTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 7)
-	  public void ershouche_homepage_testcase7() throws Exception {
+	  public void ershouche_homepage_testcase7()  {
 		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击筛选下拉菜单
@@ -175,7 +175,7 @@ public class HomePageTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 8)
-	  public void ershouche_homepage_testcase8() throws Exception {
+	  public void ershouche_homepage_testcase8()  {
 		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击排序下拉菜单
@@ -192,7 +192,7 @@ public class HomePageTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 9)
-	  public void ershouche_homepage_testcase9() throws Exception {
+	  public void ershouche_homepage_testcase9()  {
 		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击排序下拉菜单
@@ -209,7 +209,7 @@ public class HomePageTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 10)
-	  public void ershouche_homepage_testcase10() throws Exception {
+	  public void ershouche_homepage_testcase10()  {
 		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击排序下拉菜单
@@ -226,7 +226,7 @@ public class HomePageTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 11)
-	  public void ershouche_homepage_testcase11() throws Exception {
+	  public void ershouche_homepage_testcase11()  {
 		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击排序下拉菜单
@@ -243,7 +243,7 @@ public class HomePageTest extends AppTestSuite{
 		 * 
 		 */	
 	  @Test(priority = 12)
-	  public void ershouche_homepage_testcase12() throws Exception {
+	  public void ershouche_homepage_testcase12()  {
 		  //进入二手车
 		  Common.touchText(driver,Text.ERSHOUCHE);
 		  //点击排序下拉菜单
