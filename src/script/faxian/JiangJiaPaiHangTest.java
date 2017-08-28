@@ -15,7 +15,7 @@ public class JiangJiaPaiHangTest extends AppTestSuite{
 	 * 
 	 */
 	@Test(priority = 1)
-	public void xinche_jiangjiapaihang_testcase1() throws Exception {
+	public void xinche_jiangjiapaihang_testcase1()  {
 		//进入降价排行页面
 		FaXian.enterJiangJiaPaiHangPage(driver);
 		//检查进入降价排行页面
@@ -37,7 +37,7 @@ public class JiangJiaPaiHangTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 2)
-	public void xinche_jiangjiapaihang_testcase2() throws Exception {
+	public void xinche_jiangjiapaihang_testcase2()  {
 		//进入降价排行页面
 		FaXian.enterJiangJiaPaiHangPage(driver);
 		//选择全部车型
@@ -55,7 +55,7 @@ public class JiangJiaPaiHangTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 3)
-	public void xinche_jiangjiapaihang_testcase3() throws Exception{
+	public void xinche_jiangjiapaihang_testcase3() {
 		//进入降价排行页面
 		FaXian.enterJiangJiaPaiHangPage(driver);
 		//选择具体品牌车型：奥迪Q5
@@ -76,7 +76,7 @@ public class JiangJiaPaiHangTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 4)
-	public void xinche_jiangjiapaihang_testcase4() throws Exception{
+	public void xinche_jiangjiapaihang_testcase4() {
 		//进入降价排行页面
 		FaXian.enterJiangJiaPaiHangPage(driver);
 		//选择具体品牌车型：奥迪Q5
@@ -102,7 +102,7 @@ public class JiangJiaPaiHangTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 5)
-	public void xinche_jiangjiapaihang_testcase5() throws Exception {
+	public void xinche_jiangjiapaihang_testcase5()  {
 		//进入降价排行页面
 		FaXian.enterJiangJiaPaiHangPage(driver);
 		//获得当前页面显示的第一款车型
@@ -125,7 +125,7 @@ public class JiangJiaPaiHangTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 6)
-	public void xinche_jiangjiapaihang_testcase6() throws Exception {
+	public void xinche_jiangjiapaihang_testcase6()  {
 		//进入降价排行页面
 		FaXian.enterJiangJiaPaiHangPage(driver);
 		//获得当前页面显示的第一款车型
@@ -147,7 +147,7 @@ public class JiangJiaPaiHangTest extends AppTestSuite{
 	 *  
 	 */  
 	@Test(priority = 7)
-	public void xinche_jiangjiapaihang_testcase7() throws Exception {
+	public void xinche_jiangjiapaihang_testcase7()  {
 		//进入降价排行页面
 		FaXian.enterJiangJiaPaiHangPage(driver);
 		//选择降幅最大
@@ -165,7 +165,7 @@ public class JiangJiaPaiHangTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 8)
-	public void xinche_jiangjiapaihang_testcase8() throws Exception {
+	public void xinche_jiangjiapaihang_testcase8()  {
 		//进入降价排行页面
 		FaXian.enterJiangJiaPaiHangPage(driver);
 		//选择价格最高
@@ -183,7 +183,7 @@ public class JiangJiaPaiHangTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 9)
-	public void xinche_jiangjiapaihang_testcase9() throws Exception {
+	public void xinche_jiangjiapaihang_testcase9()  {
 		//进入降价排行页面
 		FaXian.enterJiangJiaPaiHangPage(driver);
 		//选择价格最低
@@ -201,7 +201,7 @@ public class JiangJiaPaiHangTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 10)
-	public void xinche_jiangjiapaihang_testcase10() throws Exception {
+	public void xinche_jiangjiapaihang_testcase10()  {
 		//进入降价排行页面
 		FaXian.enterJiangJiaPaiHangPage(driver);
 		//点击第一条数据
@@ -217,7 +217,7 @@ public class JiangJiaPaiHangTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 11)
-	public void xinche_jiangjiapaihang_testcase11() throws Exception {
+	public void xinche_jiangjiapaihang_testcase11()  {
 		//进入降价排行页面
 		FaXian.enterJiangJiaPaiHangPage(driver);
 		//点击第一条数据
@@ -237,7 +237,7 @@ public class JiangJiaPaiHangTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 12)
-	public void xinche_jiangjiapaihang_testcase12() throws Exception {
+	public void xinche_jiangjiapaihang_testcase12()  {
 		//进入降价排行页面
 		FaXian.enterJiangJiaPaiHangPage(driver);
 		//点击第一条数据
@@ -256,7 +256,7 @@ public class JiangJiaPaiHangTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 13)
-	public void xinche_jiangjiapaihang_testcase13() throws Exception {
+	public void xinche_jiangjiapaihang_testcase13()  {
 		//进入降价排行页面
 		FaXian.enterJiangJiaPaiHangPage(driver);
 		//点击第一条数据

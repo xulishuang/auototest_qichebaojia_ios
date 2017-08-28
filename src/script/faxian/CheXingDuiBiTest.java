@@ -13,10 +13,10 @@ public class CheXingDuiBiTest extends AppTestSuite{
 
 	/**
 	 * 车型对比-车型对比
-	 * @throws Exception
+	 * @
 	 */
 	@Test
-	public void faxian_chexingduibi_testCase1() throws Exception {
+	public void faxian_chexingduibi_testCase1()  {
 		//点击发现
 		Common.touchText(driver,"发现");
 	    //点击车型对比
@@ -50,7 +50,7 @@ public class CheXingDuiBiTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 2)
-	public void faxian_chexingduibi_testcase2() throws Exception {
+	public void faxian_chexingduibi_testcase2()  {
 		//进入车型对比
 		Common.touchText(driver,"发现");
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[1]");
@@ -71,7 +71,7 @@ public class CheXingDuiBiTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 3)
-	public void faxian_chexingduibi_testcase3() throws Exception{
+	public void faxian_chexingduibi_testcase3() {
 		//进入车型对比
 		Common.touchText(driver,"发现");
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[1]");
@@ -90,7 +90,7 @@ public class CheXingDuiBiTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 4)
-	public void faxian_chexingduibi_testcase4() throws Exception{
+	public void faxian_chexingduibi_testcase4() {
 		//进入我的，清空已发话题
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "我的社区");
@@ -159,7 +159,7 @@ public class CheXingDuiBiTest extends AppTestSuite{
 	 *  
 	 */
   @Test(priority = 5)
-  public void faxian_chexingduibi_testcase5() throws Exception {
+  public void faxian_chexingduibi_testcase5()  {
 	  //清空已发话题
 	  WoDe.setTopicEmpty(driver);
 	  //清空车型对比中已添加的车型
@@ -222,7 +222,7 @@ public class CheXingDuiBiTest extends AppTestSuite{
 	 *  
 	 */
   @Test(priority = 6)
-  public void faxian_chexingduibi_testcase6() throws Exception {
+  public void faxian_chexingduibi_testcase6()  {
 //	  //清空已发话题
 //	  WoDe.setTopicEmpty(driver);
 //	  //清空车型对比中已添加的车型

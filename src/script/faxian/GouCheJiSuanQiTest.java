@@ -14,7 +14,7 @@ public class GouCheJiSuanQiTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 1)
-	public void faxian_gouchejisuanqi_testcase1() throws Exception {
+	public void faxian_gouchejisuanqi_testcase1()  {
 		//进入购车计算器
 		Common.touchText(driver,"发现");
 		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[3]");
@@ -27,7 +27,7 @@ public class GouCheJiSuanQiTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 2)
-	public void faxian_gouchejisuanqi_testcase2() throws Exception {
+	public void faxian_gouchejisuanqi_testcase2()  {
 		//进入购车计算器
 		Common.touchText(driver,"发现");
 		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[3]");
@@ -55,7 +55,7 @@ public class GouCheJiSuanQiTest extends AppTestSuite{
 	 *  
 	 */
 	@Test(priority = 3)
-	public void faxian_gouchejisuanqi_testcase3() throws Exception {
+	public void faxian_gouchejisuanqi_testcase3()  {
 		//进入购车计算器
 		Common.touchText(driver,"发现");
 		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[3]");
@@ -81,7 +81,7 @@ public class GouCheJiSuanQiTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 4)
- 	public void faxian_gouchejisuanqi_testcase4() throws Exception {
+ 	public void faxian_gouchejisuanqi_testcase4()  {
  		//进入购车计算器
  		Common.touchText(driver,"发现");
  		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[3]");
@@ -120,7 +120,7 @@ public class GouCheJiSuanQiTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 5)
- 	public void faxian_gouchejisuanqi_testcase5() throws Exception {
+ 	public void faxian_gouchejisuanqi_testcase5()  {
  		//进入购车计算器
  		Common.touchText(driver,"发现");
  		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[3]");
@@ -152,7 +152,7 @@ public class GouCheJiSuanQiTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 6)
- 	public void faxian_gouchejisuanqi_testcase6() throws Exception {
+ 	public void faxian_gouchejisuanqi_testcase6()  {
  		//进入购车计算器
  		Common.touchText(driver,"发现");
  		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[3]");
@@ -193,7 +193,7 @@ public class GouCheJiSuanQiTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 7)
- 	public void faxian_gouchejisuanqi_testcase7() throws Exception {
+ 	public void faxian_gouchejisuanqi_testcase7()  {
  		//进入购车计算器
  		Common.touchText(driver,"发现");
  		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[3]");
@@ -229,7 +229,7 @@ public class GouCheJiSuanQiTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 8)
- 	public void faxian_gouchejisuanqi_testcase8() throws Exception {
+ 	public void faxian_gouchejisuanqi_testcase8()  {
  		//进入购车计算器
  		Common.touchText(driver,"发现");
  		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[3]");
@@ -260,7 +260,7 @@ public class GouCheJiSuanQiTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 9)
- 	public void faxian_gouchejisuanqi_testcase9() throws Exception {
+ 	public void faxian_gouchejisuanqi_testcase9()  {
  		//进入购车计算器
 		Common.touchText(driver,"发现");
 		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[3]");
@@ -288,7 +288,7 @@ public class GouCheJiSuanQiTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 10)
- 	public void faxian_gouchejisuanqi_testcase10() throws Exception {
+ 	public void faxian_gouchejisuanqi_testcase10()  {
  		//进入购车计算器
  		Common.touchText(driver,"发现");
  		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[3]");
@@ -339,7 +339,7 @@ public class GouCheJiSuanQiTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 11)
- 	public void faxian_gouchejisuanqi_testcase11() throws Exception {
+ 	public void faxian_gouchejisuanqi_testcase11()  {
  		//进入购车计算器
  		Common.touchText(driver,"发现");
  		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[3]");
@@ -371,7 +371,7 @@ public class GouCheJiSuanQiTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 12)
- 	public void faxian_gouchejisuanqi_testcase12() throws Exception {
+ 	public void faxian_gouchejisuanqi_testcase12()  {
  		//进入贷款页面
  		FaXian.enterLoanPage(driver);
  		//输入裸车价格，点击计算
@@ -401,7 +401,7 @@ public class GouCheJiSuanQiTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 13)
- 	public void faxian_gouchejisuanqi_testcase13() throws Exception {
+ 	public void faxian_gouchejisuanqi_testcase13()  {
  		//进入贷款页面
  		FaXian.enterLoanPage(driver);
  		//输入裸车价格，点击计算
@@ -432,7 +432,7 @@ public class GouCheJiSuanQiTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 14)
- 	public void faxian_gouchejisuanqi_testcase14() throws Exception {
+ 	public void faxian_gouchejisuanqi_testcase14()  {
  		//进入购车计算器
  		Common.touchText(driver,"发现");
  		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[3]");
@@ -478,7 +478,7 @@ public class GouCheJiSuanQiTest extends AppTestSuite{
 	 *  
 	 */
  	@Test(priority = 15)
- 	public void faxian_gouchejisuanqi_testcase15() throws Exception {
+ 	public void faxian_gouchejisuanqi_testcase15()  {
  		//进入贷款首页
  		FaXian.enterLoanPage(driver);
  		//选择车款，进入贷款结果页

@@ -14,7 +14,7 @@ public class YaoHaoChaXunTest extends AppTestSuite{
       * 
       */
 	 @Test(priority = 1)
-	 public void fanxian_yaohaochaxun_testcase1() throws Exception{
+	 public void fanxian_yaohaochaxun_testcase1() {
 		//进入摇号查询
 		FaXian.enterYaoHaoChaXunPage(driver);
 		//进入添加申请人页
@@ -51,7 +51,7 @@ public class YaoHaoChaXunTest extends AppTestSuite{
       * 
       */
 	 @Test(priority = 2)
-	 public void faxian_yaohaochaxun_testcase2() throws Exception{
+	 public void faxian_yaohaochaxun_testcase2() {
 		 //进入摇号查询
 		 FaXian.enterYaoHaoChaXunPage(driver);
 		 //进入广州添加编码
@@ -76,7 +76,7 @@ public class YaoHaoChaXunTest extends AppTestSuite{
 	  * @precondtion 接续testcase2
 	  */
 	  @Test(priority = 3)
-	  public void fanxian_yaohaochaxun_testcase3()  throws Exception{
+	  public void fanxian_yaohaochaxun_testcase3()  {
 		  //进入摇号查询
 		  FaXian.enterYaoHaoChaXunPage(driver);
 		  //点击看我多幸运
@@ -104,7 +104,7 @@ public class YaoHaoChaXunTest extends AppTestSuite{
 	  * @precondition 接续testcase1
 	  */
 	  @Test(priority=4)
-	  public void faxian_yaohaochaxun_testcase4() throws Exception{
+	  public void faxian_yaohaochaxun_testcase4() {
 		  //进入摇号查询
 		  FaXian.enterYaoHaoChaXunPage(driver);
 		  //点击看我多倒霉
@@ -132,7 +132,7 @@ public class YaoHaoChaXunTest extends AppTestSuite{
 		 * 
 		 */
 	  @Test(priority = 5)
-	  public void fanxian_yaohaochaxun_testcase5()  throws Exception{ 
+	  public void fanxian_yaohaochaxun_testcase5()  { 
 		  //进入摇号查询
 		  FaXian.enterYaoHaoChaXunPage(driver);
 		  //点击编辑

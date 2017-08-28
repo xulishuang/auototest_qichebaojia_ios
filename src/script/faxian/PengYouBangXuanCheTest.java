@@ -15,7 +15,7 @@ public class PengYouBangXuanCheTest extends AppTestSuite {
 	 *  
 	 */
 	@Test(priority = 1)
-	public void faxian_pengyoubangxuanche_testcase1() throws Exception {
+	public void faxian_pengyoubangxuanche_testcase1()  {
 		//进入朋友帮选车页面
 		FaXian.enterPengYouBangXuanChePage(driver);
 	 	//清空朋友帮选车首页已创建的帮选车
@@ -40,7 +40,7 @@ public class PengYouBangXuanCheTest extends AppTestSuite {
 	 * 继承testcase1 
 	 */
 	@Test(priority = 2)
-	public void faxian_pengyoubangxuanche_testcase2() throws Exception {
+	public void faxian_pengyoubangxuanche_testcase2()  {
 		//清空话题
 		WoDe.setTopicEmpty(driver);
 		//进入朋友帮选车页面
@@ -67,7 +67,7 @@ public class PengYouBangXuanCheTest extends AppTestSuite {
 	 *  
 	 */
 	@Test(priority = 3)
-	public void faxian_pengyoubangxuanche_testcase3() throws Exception{
+	public void faxian_pengyoubangxuanche_testcase3() {
 		//清空话题
 		WoDe.setTopicEmpty(driver);
 		//进入朋友帮选车页面
@@ -95,7 +95,7 @@ public class PengYouBangXuanCheTest extends AppTestSuite {
 	 *  
 	 */
 	@Test(priority = 4)
-	public void faxian_pengyoubangxuanche_testcase4() throws Exception {
+	public void faxian_pengyoubangxuanche_testcase4()  {
 		//进入朋友帮选车
 		FaXian.enterPengYouBangXuanChePage(driver);
 		//清空朋友帮选车首页已创建的帮选车
@@ -108,7 +108,7 @@ public class PengYouBangXuanCheTest extends AppTestSuite {
 		//点击返回
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[3]/UIAStatusBar[1]/UIAButton[1]");
 		//检查返回朋友帮选车页面，生成投票
-		Thread.sleep(2000);
+		Common.sleep(driver,2);
 		Assert.assertTrue(Common.checkXpathExist(driver," //UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]"), "检查生成投票");
 		Assert.assertTrue(Common.checkTextExist(driver,"发起投票"), "检查返回朋友帮选车页面");
 		//点击返回发现首页
@@ -121,7 +121,7 @@ public class PengYouBangXuanCheTest extends AppTestSuite {
 	 *  
 	 */
 	@Test(priority = 5)
-	public void faxian_pengyoubangxuanche_testcase5() throws Exception {
+	public void faxian_pengyoubangxuanche_testcase5()  {
 		//进入朋友帮选车页面
 		FaXian.enterPengYouBangXuanChePage(driver);
 	 	//清空朋友帮选车首页已创建的帮选车
@@ -146,7 +146,7 @@ public class PengYouBangXuanCheTest extends AppTestSuite {
 	 * 继承testcase5
 	 */
 	@Test(priority = 6)
-	public void faxian_pengyoubangxuanche_testcase6() throws Exception{
+	public void faxian_pengyoubangxuanche_testcase6() {
 		//清空话题
 		WoDe.setTopicEmpty(driver);
 		//进入朋友帮选车页面
@@ -173,7 +173,7 @@ public class PengYouBangXuanCheTest extends AppTestSuite {
 	 *  
 	 */
 	@Test(priority = 7)
-	public void faxian_pengyoubangxuanche_testcase7() throws Exception {
+	public void faxian_pengyoubangxuanche_testcase7()  {
 		//清空话题
 		WoDe.setTopicEmpty(driver);
 		//进入朋友帮选车页面
@@ -201,7 +201,7 @@ public class PengYouBangXuanCheTest extends AppTestSuite {
 	 *  
 	 */
 	@Test(priority = 8)
-	public void faxian_pengyoubangxuanche_testcase8() throws Exception {
+	public void faxian_pengyoubangxuanche_testcase8()  {
 		//进入朋友帮选车
 		FaXian.enterPengYouBangXuanChePage(driver);
 		//清空朋友帮选车首页已创建的帮选车
@@ -214,7 +214,7 @@ public class PengYouBangXuanCheTest extends AppTestSuite {
 		//点击返回
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[3]/UIAStatusBar[1]/UIAButton[1]");
 		//检查返回朋友帮选车页面，生成投票
-		Thread.sleep(2000);
+		Common.sleep(driver,2);
 		Assert.assertTrue(Common.checkXpathExist(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]"), "检查生成投票");
 		Assert.assertTrue(Common.checkTextExist(driver,"发起投票"), "检查返回朋友帮选车页面");
 		//点击返回发现首页
@@ -228,7 +228,7 @@ public class PengYouBangXuanCheTest extends AppTestSuite {
 	 *  
 	 */
 	@Test(priority = 9)
-	public void faxian_pengyoubangxuanche_testcase9() throws Exception{
+	public void faxian_pengyoubangxuanche_testcase9() {
 		//进入朋友帮选车
 		FaXian.enterPengYouBangXuanChePage(driver);
 		//删除testcase8生成的投票

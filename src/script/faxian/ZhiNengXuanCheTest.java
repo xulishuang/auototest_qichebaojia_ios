@@ -16,7 +16,7 @@ public class ZhiNengXuanCheTest extends AppTestSuite{
 		 *  
 		 */
 	  @Test(priority = 1)
-	  public void faxian_zhinengxuanche_testcase1() throws Exception {
+	  public void faxian_zhinengxuanche_testcase1()  {
 		  //进入智能选车
 		  FaXian.enterZhiNengXuanChePage(driver);
 		  //选择价格区间
@@ -61,7 +61,7 @@ public class ZhiNengXuanCheTest extends AppTestSuite{
 		 *  
 		 */
 	  @Test(priority = 2)
-	  public void faxian_zhinengxuanche_testcase2() throws Exception {
+	  public void faxian_zhinengxuanche_testcase2()  {
 		  //进入智能选车
 		  FaXian.enterZhiNengXuanChePage(driver);
 		  //选择三个需求标签
@@ -85,7 +85,7 @@ public class ZhiNengXuanCheTest extends AppTestSuite{
 		 *  
 		 */
 	  @Test(priority = 3)
-	  public void faxian_zhinengxuanche_testcase3() throws Exception{
+	  public void faxian_zhinengxuanche_testcase3() {
 		  //进入智能选车
 		  FaXian.enterZhiNengXuanChePage(driver);
 		  //点击进入结果页
