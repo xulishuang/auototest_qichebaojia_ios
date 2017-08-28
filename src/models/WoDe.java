@@ -22,7 +22,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void enterTopicPage(IOSDriver driver) throws InterruptedException{
+	public static void enterTopicPage(IOSDriver driver) {
 		//进入我的社区-话题
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "我的社区");
@@ -37,7 +37,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void enterCommentPage(IOSDriver driver) throws InterruptedException{
+	public static void enterCommentPage(IOSDriver driver) {
 		//进入我的社区-话题
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "我的社区");
@@ -52,7 +52,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void enterFollowPage(IOSDriver driver) throws InterruptedException{
+	public static void enterFollowPage(IOSDriver driver) {
 		//进入我的社区-话题
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "我的社区");
@@ -67,7 +67,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void enterFansPage(IOSDriver driver) throws InterruptedException{
+	public static void enterFansPage(IOSDriver driver) {
 		//进入我的社区-话题
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "我的社区");
@@ -82,7 +82,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void enterTopicCollectionPage(IOSDriver driver) throws InterruptedException{
+	public static void enterTopicCollectionPage(IOSDriver driver) {
 		//进入我的社区-话题
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "我的社区");
@@ -97,7 +97,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void enterDraftsPage(IOSDriver driver) throws InterruptedException{
+	public static void enterDraftsPage(IOSDriver driver) {
 		//进入我的社区-话题
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "我的社区");
@@ -112,7 +112,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void enterReceivedPraisePage(IOSDriver driver) throws InterruptedException{
+	public static void enterReceivedPraisePage(IOSDriver driver) {
 		//进入我的社区-话题
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "我的社区");
@@ -127,7 +127,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void enterReceivedCommentPage(IOSDriver driver) throws InterruptedException{
+	public static void enterReceivedCommentPage(IOSDriver driver) {
 		//进入我的社区-话题
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "我的社区");
@@ -142,7 +142,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void enterMentionedMePage(IOSDriver driver) throws InterruptedException{
+	public static void enterMentionedMePage(IOSDriver driver) {
 		//进入我的社区-话题
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "我的社区");
@@ -157,7 +157,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void enterCommunityNotificationPage(IOSDriver driver) throws InterruptedException{
+	public static void enterCommunityNotificationPage(IOSDriver driver) {
 		//进入我的社区-话题
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "我的社区");
@@ -173,7 +173,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void setTopicEmpty(IOSDriver driver) throws InterruptedException{
+	public static void setTopicEmpty(IOSDriver driver) {
 		//进入我的社区-话题
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "我的社区");
@@ -192,12 +192,12 @@ public class WoDe {
 	/**
 	 * @function 清空 我的社区-评论 已发评论
 	 * @param driver
-	 * @throws InterruptedException
+	 * @
 	 * @author xulishuang
 	 * @date 2017-7-26
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void setCommentsEmpty(IOSDriver driver) throws InterruptedException{
+	public static void setCommentsEmpty(IOSDriver driver) {
 		//清空评论
 		Common.touchText(driver, "我的");
 		Common.touchText(driver, "我的社区");
@@ -212,12 +212,12 @@ public class WoDe {
 	/**
 	 * @function 清空 我的社区-关注 已关注列表
 	 * @param driver
-	 * @throws InterruptedException
+	 * @
 	 * @author xulishuang
 	 * @date 2017-7-26
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void setFollowsEmpty(IOSDriver driver) throws InterruptedException{
+	public static void setFollowsEmpty(IOSDriver driver) {
 		//清空评论
 		WoDe.enterFollowPage(driver);//点击评论
 		while(Common.checkTextExist(driver, "myAttention xhgz nor")){
@@ -232,12 +232,12 @@ public class WoDe {
 	/**
 	 * @function 清空 我的社区-收藏夹 已收藏话题
 	 * @param driver
-	 * @throws InterruptedException
+	 * @
 	 * @author xulishuang
 	 * @date 2017-7-26
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void setTopicCollectionEmpty(IOSDriver driver) throws InterruptedException{
+	public static void setTopicCollectionEmpty(IOSDriver driver) {
 		//清空评论
 		WoDe.enterTopicCollectionPage(driver);//进入收藏夹
 		while(Common.checkTextExist(driver, "topic btn action 6 nor")){
@@ -249,12 +249,12 @@ public class WoDe {
 	/**
 	 * @function 清空 我的社区-草稿箱 所有草稿
 	 * @param driver
-	 * @throws InterruptedException
+	 * @
 	 * @author xulishuang
 	 * @date 2017-7-26
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void setDraftsEmpty(IOSDriver driver) throws InterruptedException{
+	public static void setDraftsEmpty(IOSDriver driver) {
 		//清空评论
 		WoDe.enterDraftsPage(driver);//进入草稿箱
 		while(Common.checkTextExist(driver, "删除")){
@@ -272,7 +272,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void setModelsCollectionEmpty(IOSDriver driver) throws InterruptedException{
+	public static void setModelsCollectionEmpty(IOSDriver driver) {
 		//进入我的-车型收藏
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "车型收藏");
@@ -294,7 +294,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void setCarCollectionEmpty(IOSDriver driver) throws InterruptedException{
+	public static void setCarCollectionEmpty(IOSDriver driver) {
 		//进入我的-车型收藏
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "车型收藏");
@@ -317,7 +317,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void setUsedCarCollectionEmpty(IOSDriver driver) throws InterruptedException{
+	public static void setUsedCarCollectionEmpty(IOSDriver driver) {
 		//进入我的-车型收藏
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "车型收藏");
@@ -340,7 +340,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void setDealersCollectionEmpty(IOSDriver driver) throws InterruptedException{
+	public static void setDealersCollectionEmpty(IOSDriver driver) {
 		//进入我的-车型收藏
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "车型收藏");
@@ -364,7 +364,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void setModelsBrowseEmpty(IOSDriver driver) throws InterruptedException{
+	public static void setModelsBrowseEmpty(IOSDriver driver) {
 		//进入浏览记录
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "浏览记录");
@@ -386,7 +386,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void setDealersBrowseEmpty(IOSDriver driver) throws InterruptedException{
+	public static void setDealersBrowseEmpty(IOSDriver driver) {
 		//进入浏览记录
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "浏览记录");
@@ -409,7 +409,7 @@ public class WoDe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void setCutsBrowseEmpty(IOSDriver driver) throws InterruptedException{
+	public static void setCutsBrowseEmpty(IOSDriver driver) {
 		//进入浏览记录
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "浏览记录");

@@ -21,7 +21,7 @@ public class ErShouChe {
 	 * @time 2017-6-7
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void enterUsedCarDetailPage(IOSDriver driver) throws InterruptedException{
+	public static void enterUsedCarDetailPage(IOSDriver driver) {
 		//进入二手车车源详情页面
  		Common.touchText(driver,"二手车");
  		Common.touchXpath(driver," //UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]");
@@ -35,7 +35,7 @@ public class ErShouChe {
 	 * @time 2017-6-7
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void collectUsedCar(IOSDriver driver) throws InterruptedException{
+	public static void collectUsedCar(IOSDriver driver) {
 		//收藏二手车
  		Common.touchText(driver,"二手车");
  		Common.touchXpath(driver," //UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]");

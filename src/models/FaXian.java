@@ -22,7 +22,7 @@ public class FaXian {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void setContrastCarsEmpty(IOSDriver driver) throws InterruptedException{
+	public static void setContrastCarsEmpty(IOSDriver driver) {
 		//进入发现-车型对比
 		Common.touchText(driver,"发现");
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[1]");
@@ -44,7 +44,7 @@ public class FaXian {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void addCars(IOSDriver driver) throws InterruptedException{
+	public static void addCars(IOSDriver driver) {
 		//添加两种车款
 	    Common.touchText(driver, "添加车款");
 	    Common.touchText(driver, "奥迪");
@@ -66,7 +66,7 @@ public class FaXian {
 	 * 
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void addModels(IOSDriver driver) throws InterruptedException{
+	public static void addModels(IOSDriver driver) {
 		//添加两种车型
 		Common.touchText(driver,"添加车型");
 		Common.touchText(driver,"奥迪");
@@ -85,7 +85,7 @@ public class FaXian {
 	 * 
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void enterLoanPage(IOSDriver driver) throws InterruptedException{
+	public static void enterLoanPage(IOSDriver driver) {
 		//进入购车计算器
  		Common.touchText(driver,"发现");
  		Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[3]");
@@ -105,7 +105,7 @@ public class FaXian {
 	 * 
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void chooseCar(IOSDriver driver) throws InterruptedException{
+	public static void chooseCar(IOSDriver driver) {
 		//选择车款
  		Common.touchText(driver,"选择车款");
  		Common.touchText(driver, "奥迪");

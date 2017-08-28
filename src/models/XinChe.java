@@ -88,11 +88,11 @@ public class XinChe {
 	 * @function 进行经销商收藏
 	 * @param driver
 	 * @author xulishuang
-	 * @throws InterruptedException 
+	 * @ 
 	 * @time 2017-6-7
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void collectDealers(IOSDriver driver) throws InterruptedException{
+	public static void collectDealers(IOSDriver driver) {
 		//收藏经销商
  		Common.touchText(driver,"新车");
  		Common.touchText(driver,"奥迪");
@@ -108,11 +108,11 @@ public class XinChe {
 	 * @function 进行车款收藏
 	 * @param driver
 	 * @author xulishuang
-	 * @throws InterruptedException 
+	 * @ 
 	 * @time 2017-6-7
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void collectCars(IOSDriver driver) throws InterruptedException{
+	public static void collectCars(IOSDriver driver) {
 		//收藏车款
  		Common.touchText(driver,"新车");
  		Common.touchText(driver,"奥迪");

@@ -56,7 +56,7 @@ public class BangMaiChe {
 	 * 
 	 */ 
 	@SuppressWarnings("rawtypes")
-	public static void addCars(IOSDriver driver) throws InterruptedException{
+	public static void addCars(IOSDriver driver){
 		//添加两种车款
 	    Common.touchText(driver, "添加车款");
 	    Common.touchText(driver, "奥迪");
@@ -77,7 +77,7 @@ public class BangMaiChe {
 	 * 
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void addModels(IOSDriver driver) throws InterruptedException{
+	public static void addModels(IOSDriver driver){
 		//添加两种车型
 		Common.touchText(driver,"添加车型");
 		Common.touchText(driver,"奥迪");
@@ -96,7 +96,7 @@ public class BangMaiChe {
 	 * 
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void releaseGeneralTopic(IOSDriver driver) throws InterruptedException{
+	public static void releaseGeneralTopic(IOSDriver driver){
 		//点击进入帮买车
 		Common.touchText(driver,"帮买车");
 		//点击最新
@@ -120,7 +120,7 @@ public class BangMaiChe {
 	 * 
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void releaseVoteTopic(IOSDriver driver) throws InterruptedException{
+	public static void releaseVoteTopic(IOSDriver driver){
 		//点击进入帮买车
 		Common.touchText(driver,"帮买车");
 		//点击最新
@@ -147,7 +147,7 @@ public class BangMaiChe {
 	 * 
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void addUserFollow(IOSDriver driver) throws InterruptedException{
+	public static void addUserFollow(IOSDriver driver){
 		Common.touchText(driver, "帮买车");
 		Common.touchText(driver, "最新");
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIATableView[1]/UIATableCell[1]/UIAButton[1]");
@@ -163,7 +163,7 @@ public class BangMaiChe {
 	 * 
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void addTopicCollection(IOSDriver driver) throws InterruptedException{
+	public static void addTopicCollection(IOSDriver driver){
 		Common.touchText(driver, "帮买车");
 		Common.touchText(driver, "最新");
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIATableView[1]/UIATableCell[1]/UIAStaticText[1]");
@@ -179,7 +179,7 @@ public class BangMaiChe {
 	 * 
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void addTopicDraft(IOSDriver driver) throws InterruptedException{
+	public static void addTopicDraft(IOSDriver driver){
 		Common.touchText(driver, "帮买车");
 		Common.touchText(driver,"最新");
 		Common.touchText(driver,"发帖");
