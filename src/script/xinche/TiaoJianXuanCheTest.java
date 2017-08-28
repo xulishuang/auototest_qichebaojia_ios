@@ -11,7 +11,7 @@ import script.AppTestSuite;
 public class TiaoJianXuanCheTest extends AppTestSuite{
 	
 	@Test(priority = 1)
-	public void xinche_tiaojianxuanche_testcase1() throws Exception {
+	public void xinche_tiaojianxuanche_testcase1()  {
 		//进入条件选车
 		XinChe.enterTiaoJianXuanChePage(driver);
 		//点击重置
@@ -31,7 +31,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	  }
 	
 	@Test(priority = 2)
-	  public void xinche_tiaojianxuanche_testcase2() throws Exception {
+	  public void xinche_tiaojianxuanche_testcase2()  {
 		//进入条件选车
 		XinChe.enterTiaoJianXuanChePage(driver);
 	    //点击更多选车条件
@@ -66,7 +66,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	  }
 	
 	@Test(priority = 3)
-	public void xinche_tiaojianxuanche_testcase3() throws Exception{
+	public void xinche_tiaojianxuanche_testcase3() {
 		//进入条件选车
 		XinChe.enterTiaoJianXuanChePage(driver);
 		//点击更多选车条件
@@ -84,7 +84,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	  }
 	
 	@Test(priority = 4)
-	public void xinche_tiaojianxuanche_testcase4() throws Exception{
+	public void xinche_tiaojianxuanche_testcase4() {
 		//进入条件选车
 		XinChe.enterTiaoJianXuanChePage(driver);
 		//点击更多选车条件
@@ -129,7 +129,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	  }
 	
 	@Test(priority = 5)
-	public void xinche_tiaojianxuanche_testcase5() throws Exception{  
+	public void xinche_tiaojianxuanche_testcase5() {  
 		//进入条件选车
 		XinChe.enterTiaoJianXuanChePage(driver);
 		//点击重置
@@ -153,7 +153,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	  }
 	
 	@Test(priority = 6)
-	public void xinche_tiaojianxuanche_testcase6() throws Exception {
+	public void xinche_tiaojianxuanche_testcase6()  {
 		//进入条件选车
 		XinChe.enterTiaoJianXuanChePage(driver);
 		//进入结果页面
@@ -165,7 +165,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	  }
 	
 	@Test(priority = 7)
-	public void xinche_tiaojianxuanche_testcase7() throws Exception {
+	public void xinche_tiaojianxuanche_testcase7()  {
 		//进入条件选车
 		XinChe.enterTiaoJianXuanChePage(driver);
 		//进入结果页面
@@ -179,7 +179,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	  }
 	
 	@Test(priority = 8)
-	public void xinche_tiaojianxuanche_testcase8() throws Exception {
+	public void xinche_tiaojianxuanche_testcase8()  {
 		//进入条件选车
 		XinChe.enterTiaoJianXuanChePage(driver);
 		//进入结果页面
@@ -193,7 +193,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	  }
 	
 	@Test(priority = 9)
-	public void xinche_tiaojianxuanche_testcase9() throws Exception{  
+	public void xinche_tiaojianxuanche_testcase9() {  
 		//进入条件选车
 		XinChe.enterTiaoJianXuanChePage(driver);
 		Common.touchTopRight(driver);
@@ -209,7 +209,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	  }
 	
 	@Test(priority = 10)
-	public void xinche_tiaojianxuanche_testcase10() throws Exception{  
+	public void xinche_tiaojianxuanche_testcase10() {  
 		//进入条件选车
 		XinChe.enterTiaoJianXuanChePage(driver);
 		Common.touchTopRight(driver);
@@ -234,7 +234,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	 * 预期条件级别、变速箱、排量可以带到二手车的筛选条件中
 	 */	
 	@Test(priority = 11)
-	public void xinche_tiaojianxuanche_testcase11() throws Exception{  
+	public void xinche_tiaojianxuanche_testcase11() {  
 		//进入条件选车
 		XinChe.enterTiaoJianXuanChePage(driver);
 	    Common.touchTopRight(driver);
@@ -268,7 +268,7 @@ public class TiaoJianXuanCheTest extends AppTestSuite{
 	 * 
 	 */	
 	@Test(priority = 12)
-	public void xinche_tiaojianxuanche_testcase12() throws Exception{  
+	public void xinche_tiaojianxuanche_testcase12() {  
 		//进入条件选车
 		XinChe.enterTiaoJianXuanChePage(driver);
 		Common.touchTopRight(driver);

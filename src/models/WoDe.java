@@ -277,10 +277,10 @@ public class WoDe {
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "车型收藏");
 		//清空车型收藏
-		while (Common.checkXpathExist(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]")){
-			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]");
-			Common.touchText(driver, "fav nor");
-			Common.back(driver);
+		if (Common.checkXpathExist(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]")){
+			Common.touchTopRight(driver);//点击编辑
+			Common.touchText(driver, "清空");//点击清空
+			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");//确定清空
 		}
 		//返回首页
 		Common.back(driver);
@@ -300,10 +300,10 @@ public class WoDe {
 		Common.touchText(driver, "车型收藏");
 		Common.touchText(driver,"车款");
 		//清空已收藏车款
-		while (Common.checkXpathExist(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]")){
-			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]");
-			Common.touchText(driver, "fav nor");
-			Common.back(driver);
+		if (Common.checkXpathExist(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]")){
+			Common.touchTopRight(driver);//点击编辑
+			Common.touchText(driver, "清空");//点击清空
+			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");//确定清空
 		}
 		//返回首页
 		Common.back(driver);
@@ -323,10 +323,10 @@ public class WoDe {
 		Common.touchText(driver, "车型收藏");
 		Common.touchText(driver,"二手车");
 		//清空已收藏车款
-		while (Common.checkXpathExist(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]")){
-			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]");
-			Common.touchText(driver, "fav nor");
-			Common.back(driver);
+		if (Common.checkXpathExist(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]")){
+			Common.touchTopRight(driver);//点击编辑
+			Common.touchText(driver, "清空");//点击清空
+			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");//确定清空
 		}
 		//返回首页
 		Common.back(driver);
@@ -346,11 +346,10 @@ public class WoDe {
 		Common.touchText(driver, "车型收藏");
 		Common.touchText(driver,"经销商");
 		//清空已收藏经销商
-		while (Common.checkXpathExist(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]")){
-			Common.touchTopRight(driver); //点击编辑
-			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]/UIAButton[1]");
-			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]/UIAButton[2]");
-			Common.touchTopRight(driver); //点击完成
+		if (Common.checkXpathExist(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]")){
+			Common.touchTopRight(driver);//点击编辑
+			Common.touchText(driver, "清空");//点击清空
+			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");//确定清空
 		}
 		//返回首页
 		Common.back(driver);
@@ -371,8 +370,9 @@ public class WoDe {
 		String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]/UIAStaticText[1]"));
 		//清空浏览记录
 		if (!text.equals("您现在还没有浏览任何车型,")){
-			Common.touchTopRight(driver);
-			Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[4]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");
+			Common.touchTopRight(driver);//点击编辑
+			Common.touchText(driver, "清空");//点击清空
+			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");//确定清空
 		}
 		//返回首页
 		Common.back(driver);
@@ -394,9 +394,10 @@ public class WoDe {
 		//清空浏览记录
 		String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]/UIAStaticText[1]"));
 		if (!text.equals("您现在还没有浏览任何经销商,")){
-			Common.touchTopRight(driver);
-			Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[4]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");
-		}
+			Common.touchTopRight(driver);//点击编辑
+			Common.touchText(driver, "清空");//点击清空
+			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");//确定清空
+	  }
 		//返回首页
 		Common.back(driver);
 	}
@@ -417,8 +418,9 @@ public class WoDe {
 		//清空浏览记录
 		String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]/UIAStaticText[1]"));
 		if (!text.equals("您现在还没有浏览任何降价,")){
-			Common.touchTopRight(driver);
-			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[4]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");
+			Common.touchTopRight(driver);//点击编辑
+			Common.touchText(driver, "清空");//点击清空
+			Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");//确定清空
 		}
 		//返回首页
 		Common.back(driver);

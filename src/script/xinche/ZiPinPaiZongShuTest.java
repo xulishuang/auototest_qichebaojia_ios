@@ -17,7 +17,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 * 
 	 */	
 	@Test(priority = 1)
-	public void xinche_zipinpaizongshu_testcase1() throws Exception {
+	public void xinche_zipinpaizongshu_testcase1()  {
 //		//进入子品牌综述页
 //		XinChe.enterZongShuPage(driver);
 //		//检查进入子品牌综述页面
@@ -43,7 +43,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 * 
 	 */	
 	@Test(priority = 2)
-	public void xinche_zipinpaizongshu_testcase2() throws Exception { 
+	public void xinche_zipinpaizongshu_testcase2()  { 
 		//进入子品牌综述页
 		XinChe.enterZongShuPage(driver);
 		//点击油耗
@@ -61,7 +61,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 * 
 	 */
 	@Test(priority = 3)
-	public void xinche_zipinpaizongshu_testcase3() throws Exception{
+	public void xinche_zipinpaizongshu_testcase3() {
 	  //清空车款收藏
 	  WoDe.setCarCollectionEmpty(driver);
 	  //进入子品牌综述页
@@ -113,7 +113,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 * 
 	 */
 	@Test(priority = 4)
-	public void xinche_zipinpaizongshu_testcase4() throws Exception{
+	public void xinche_zipinpaizongshu_testcase4() {
 		//进入子品牌综述页
 		XinChe.enterZongShuPage(driver);
 		//点击参数配置
@@ -135,7 +135,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 * 
 	 */
 	@Test(priority = 5)
-	public void xinche_zipinpaizongshu_testcase5() throws Exception{
+	public void xinche_zipinpaizongshu_testcase5() {
 		//进入子品牌综述页
 		XinChe.enterZongShuPage(driver);
 		//点击参数配置
@@ -156,7 +156,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 * 
 	 */	
 	@Test(priority = 6)
-	public void xinche_zipinpaizongshu_testcase6() throws Exception {
+	public void xinche_zipinpaizongshu_testcase6()  {
 		//进入子品牌综述页面
 		XinChe.enterZongShuPage(driver);
 		//点击参数配置
@@ -177,7 +177,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 * 
 	 */	
 	@Test(priority = 7)
-	public void xinche_zipinpaizongshu_testcase7() throws Exception {
+	public void xinche_zipinpaizongshu_testcase7()  {
 		//进入子品牌综述页
 		XinChe.enterZongShuPage(driver);
 		//点击参数配置
@@ -219,7 +219,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 * 
 	 */
 	@Test(priority = 8)
-	public void xinche_zipinpaizongshu_testcase8() throws Exception{ 
+	public void xinche_zipinpaizongshu_testcase8() { 
 	
   }
   
@@ -228,7 +228,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 * 
 	 */
 	@Test(priority = 9)
-	public void xinche_zipinpaizongshu_testcase9() throws Exception{
+	public void xinche_zipinpaizongshu_testcase9() {
 		
 	}
 	
@@ -237,7 +237,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 * 
 	 */
 	@Test(priority = 10)
-	public void xinche_zipinpaizongshu_testcase10() throws Exception{ 
+	public void xinche_zipinpaizongshu_testcase10() { 
 	
   }
   
@@ -246,7 +246,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 * 
 	 */
 	@Test(priority = 11)
-	public void xinche_zipinpaizongshu_testcase11() throws Exception{
+	public void xinche_zipinpaizongshu_testcase11() {
 		
 	}
 	
@@ -255,7 +255,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 * 
 	 */	
 	@Test(priority = 12)
-	public void xinche_zipinpaizongshu_testcase12() throws Exception { 
+	public void xinche_zipinpaizongshu_testcase12()  { 
 		//进入子品牌综述页
 		XinChe.enterZongShuPage(driver);
 		//点击询底价
@@ -292,7 +292,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 * 
 	 */
 	@Test(priority = 13)
-	public void xinche_zipinpaizongshu_testcase13() throws Exception{ 
+	public void xinche_zipinpaizongshu_testcase13() { 
 		//进入子品牌综述页
 		XinChe.enterZongShuPage(driver);
 		//切换年款
@@ -310,7 +310,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 * 
 	 */
 	@Test(priority = 14)
-	public void xinche_zipinpaizongshu_testcase14() throws Exception{
+	public void xinche_zipinpaizongshu_testcase14() {
 		//清除车型对比中已有车型
 		FaXian.setContrastCarsEmpty(driver);
 		//进入子品牌综述页
@@ -333,7 +333,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 */
   
 	@Test(priority = 15)
-	public void xinche_zipinpaizongshu_testcase15() throws Exception{
+	public void xinche_zipinpaizongshu_testcase15() {
 	 	//进入子品牌综述页
 		XinChe.enterZongShuPage(driver);
 		//点击购车计算器
@@ -351,7 +351,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 */
   
 	@Test(priority = 16)
-	public void xinche_zipinpaizongshu_testcase16() throws Exception{  
+	public void xinche_zipinpaizongshu_testcase16() {  
 		//进入子品牌综述页
 		XinChe.enterZongShuPage(driver);
 		//点击询底价
