@@ -12,11 +12,11 @@ import models.XinChe;
 public class CheXingShouCangTest extends AppTestSuite{
 	
 	/**
-	 * @throws InterruptedException 
+	 * @ 
 	 * @function 车型-添加车型
 	 */
 	@Test(priority = 1)
-	public void wode_chexingshoucang_testcase1() throws InterruptedException {
+	public void wode_chexingshoucang_testcase1()  {
 		//清空车型收藏
 		WoDe.setModelsCollectionEmpty(driver);
 		//进入我的-车型收藏-添加车型
@@ -31,12 +31,12 @@ public class CheXingShouCangTest extends AppTestSuite{
 	}
 	
 	/**
-	 * @throws InterruptedException 
+	 * @ 
 	 * @function 车型-查看车型
 	 * @precondition 接续testcase1
 	 */
 	@Test(priority = 2)
-	public void wode_chexingshoucang_testcase2() throws InterruptedException {
+	public void wode_chexingshoucang_testcase2()  {
 		//进入车型收藏
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "车型收藏");
@@ -69,10 +69,10 @@ public class CheXingShouCangTest extends AppTestSuite{
 	
 	/**
 	 * @function 车款-添加车款
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 4)
-	public void wode_chexingshoucang_testcase4() throws Exception{
+	public void wode_chexingshoucang_testcase4() {
 		//清空车款
 		WoDe.setCarCollectionEmpty(driver);
 		//添加车款收藏
@@ -88,12 +88,12 @@ public class CheXingShouCangTest extends AppTestSuite{
 	}
 	
 	/**
-	 * @throws InterruptedException 
+	 * @ 
 	 * @function 车款-查看车款
 	 * 
 	 */
 	@Test(priority = 5)
-    public void wode_chexingshoucang_testcase5() throws InterruptedException {
+    public void wode_chexingshoucang_testcase5()  {
 		//进入车型收藏-车款列表查看
 		Common.touchText(driver, "我的");
 		Common.touchText(driver, "车型收藏");
@@ -127,10 +127,10 @@ public class CheXingShouCangTest extends AppTestSuite{
 	
 	/**
 	 * @function 经销商-添加经销商
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 7)
-	public void wode_chexingshoucang_testcase7() throws Exception{
+	public void wode_chexingshoucang_testcase7() {
 		//清空经销商
 		WoDe.setDealersCollectionEmpty(driver);
 		//添加经销商收藏
@@ -146,12 +146,12 @@ public class CheXingShouCangTest extends AppTestSuite{
 	}
 	
 	/**
-	 * @throws InterruptedException 
+	 * @ 
 	 * @function 经销商-查看经销商数据
 	 * @precondition 接续testcase7
 	 */
 	@Test(priority = 8)
-	public void wode_chexingshoucang_testcase8() throws InterruptedException{
+	public void wode_chexingshoucang_testcase8() {
 		//进入我的-车型收藏-经销商
 		Common.touchText(driver, "我的");
 		Common.touchText(driver, "车型收藏");
@@ -185,11 +185,11 @@ public class CheXingShouCangTest extends AppTestSuite{
 	}
 	
 	/**
-	 * @throws InterruptedException 
+	 * @ 
 	 * @function 二手车-添加二手车
 	 */
 	@Test(priority = 10)
-	public void wode_chexingshoucang_testcase10() throws InterruptedException{
+	public void wode_chexingshoucang_testcase10() {
 		//清空二手车
 		WoDe.setUsedCarCollectionEmpty(driver);
 		//添加二手车收藏
@@ -206,10 +206,10 @@ public class CheXingShouCangTest extends AppTestSuite{
 		
 	/**
 	 * @function 二手车-查看二手车数据
-	 * @throws InterruptedException 
+	 * @ 
 	 */
 	@Test(priority = 11)
-	public void wode_chexingshoucang_testcase11() throws InterruptedException{
+	public void wode_chexingshoucang_testcase11() {
 		//查看我的-车型收藏-二手车列表
 		Common.touchText(driver, "我的");
 		Common.touchText(driver, "车型收藏");

@@ -11,10 +11,10 @@ import common.*;
 public class AccountInformationTest extends AppTestSuite {
 	/**
 	 * @function 查看头像
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 1)
-	public void wode_accountinformation_testcase1() throws Exception {
+	public void wode_accountinformation_testcase1()  {
 		//进入我的
 		Common.touchText(driver, "我的");
 		//点击头像，大图浏览
@@ -23,10 +23,10 @@ public class AccountInformationTest extends AppTestSuite {
 	
 	/**
 	 * @function 修改账号信息
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 2)
-	public void wode_accountinformation_testcase2() throws Exception{
+	public void wode_accountinformation_testcase2() {
 		//进入我的
 		Common.touchText(driver, "我的");
 		//进入账号信息

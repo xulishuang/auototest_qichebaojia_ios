@@ -11,10 +11,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
     /**
      * @function 我的话题列表-添加话题
-     * @throws Exception
+     * @
      */
 	@Test(priority = 1)
-	public void wode_mycommunity_testcase1() throws Exception{
+	public void wode_mycommunity_testcase1() {
 		//清空我的话题列表
 		WoDe.setTopicEmpty(driver);
 		//发布话题
@@ -30,10 +30,10 @@ public class MyCommunityTest extends AppTestSuite{
 	/**
 	 * @function 我的话题列表-话题跳转
 	 * @precondition 接续testcase1
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 2)
-	public void wode_mycommunity_testcase2() throws Exception{
+	public void wode_mycommunity_testcase2() {
 		//进入我的-我的社区-话题
 		WoDe.enterTopicPage(driver);
 		//点击话题数据
@@ -47,10 +47,10 @@ public class MyCommunityTest extends AppTestSuite{
 	/**
 	 * @function 我的话题列表-点赞
 	 * @preconditon 接续testcase1
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 3)
-	public void wode_mycommunity_testcase3() throws Exception{
+	public void wode_mycommunity_testcase3() {
 		//进入我的-我的社区-话题
 		WoDe.enterTopicPage(driver);
 		//点赞
@@ -64,10 +64,10 @@ public class MyCommunityTest extends AppTestSuite{
 	/**
 	 * @function 我的话题列表-评论
 	 * @precondion 接续testcase1
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 4)
-	public void wode_mycommunity_testcase4() throws Exception{
+	public void wode_mycommunity_testcase4() {
 		//进入我的-我的社区-话题
 		WoDe.enterTopicPage(driver);
 		//进行评论
@@ -84,10 +84,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 我的评论列表-添加评论
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 5)
-	public void wode_mycommunity_testcase5() throws Exception{
+	public void wode_mycommunity_testcase5() {
 		//清空评论
 		WoDe.setCommentsEmpty(driver);
 		//进入帮买车发表评论
@@ -108,10 +108,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 我的评论列表-话题跳转
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 6)
-	public void wode_mycommunity_testcase6() throws Exception{
+	public void wode_mycommunity_testcase6() {
 		//进入我的评论列表	
 		WoDe.enterCommentPage(driver);
 		//点击某一条收到的评论
@@ -124,10 +124,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 我的评论列表-删除
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 7)
-	public void wode_mycommunity_testcase7() throws Exception{
+	public void wode_mycommunity_testcase7() {
 		//进入我的评论列表,删除评论列表
 		WoDe.setCommentsEmpty(driver);
 		//检查评论删除成功		
@@ -138,10 +138,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 我的关注列表-添加关注
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 8)
-	public void wode_mycommunity_testcase8() throws Exception{
+	public void wode_mycommunity_testcase8() {
 		//清空关注列表
 		WoDe.setFollowsEmpty(driver);
 		//进入帮买车，添加关注
@@ -162,10 +162,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 我的关注列表-页面跳转
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 9)
-	public void wode_mycommunity_testcase9() throws Exception{
+	public void wode_mycommunity_testcase9() {
 		//进入帮买车，添加关注
 		BangMaiChe.addUserFollow(driver);
 		//进入我的社区-关注
@@ -180,10 +180,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 我的粉丝列表-加关注
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 10)
-	public void wode_mycommunity_testcase10() throws Exception{
+	public void wode_mycommunity_testcase10() {
 		//进入我的社区-粉丝			
 		WoDe.enterFansPage(driver);
 	    String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[1]"));
@@ -202,10 +202,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 我的粉丝列表-页面跳转
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 11)
-	public void wode_mycommunity_testcase11() throws Exception{
+	public void wode_mycommunity_testcase11() {
 		//进入我的社区-粉丝			
 		WoDe.enterFansPage(driver);			
 		//点击某一粉丝
@@ -218,10 +218,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 收藏夹-添加收藏话题
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 12)
-	public void wode_mycommunity_testcase12() throws Exception{
+	public void wode_mycommunity_testcase12() {
 		//请空收藏夹数据
 		WoDe.setTopicCollectionEmpty(driver);
 		//添加收藏话题
@@ -237,10 +237,10 @@ public class MyCommunityTest extends AppTestSuite{
 	/**
 	 * @function 收藏夹-页面跳转-他人主页
 	 * @precondition 接续testcase12 已有话题收藏
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 13)
-	public void wode_mycommunity_testcase13() throws Exception{
+	public void wode_mycommunity_testcase13() {
 		//进入我的社区-收藏夹					
 		WoDe.enterTopicCollectionPage(driver);
 		//页面跳转
@@ -254,10 +254,10 @@ public class MyCommunityTest extends AppTestSuite{
 	/**
 	 * @function 收藏夹-页面跳转-话题详情页
 	 * @precondition 接续testcase12 已有话题收藏
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 14)
-	public void wode_mycommunity_testcase14() throws Exception{
+	public void wode_mycommunity_testcase14() {
 		//进入我的社区-收藏夹						
 		WoDe.enterTopicCollectionPage(driver);
 		//页面跳转
@@ -271,10 +271,10 @@ public class MyCommunityTest extends AppTestSuite{
 	/**
 	 * @function 收藏夹-点赞
 	 * @precondition 接续testcase12 已有话题收藏
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 15)
-	public void wode_mycommunity_testcase15() throws Exception{
+	public void wode_mycommunity_testcase15() {
 //		//进入我的社区-收藏夹						
 //		WoDe.enterTopicCollectionPage(driver);
 //	    //进行点赞
@@ -288,10 +288,10 @@ public class MyCommunityTest extends AppTestSuite{
 	/**
 	 * @function 收藏夹-评论
 	 * @precondition 接续testcase12 已有话题收藏
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 16)
-	public void wode_mycommunity_testcase16() throws Exception{
+	public void wode_mycommunity_testcase16() {
 		//进入我的社区-收藏夹						
 		WoDe.enterTopicCollectionPage(driver);
 		//进行评论
@@ -310,10 +310,10 @@ public class MyCommunityTest extends AppTestSuite{
 	/**
 	 * @function 收藏夹列表-取消收藏
 	 * @precondition 接续testcase12 已有话题收藏
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 17)
-	public void wode_mycommunity_testcase17() throws Exception{
+	public void wode_mycommunity_testcase17() {
 		//进入我的社区-收藏夹						
 		WoDe.enterTopicCollectionPage(driver);
 		//取消收藏
@@ -326,10 +326,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 草稿箱-添加数据
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 18)
-	public void wode_mycommunity_testcase18() throws Exception{
+	public void wode_mycommunity_testcase18() {
 		//清空草稿箱
 		WoDe.setDraftsEmpty(driver);
 		//进入帮买车，添加话题草稿
@@ -345,10 +345,10 @@ public class MyCommunityTest extends AppTestSuite{
 	/**
 	 * @function 草稿箱-编辑话题
 	 * @preconditon 接续testcase18 已有草稿
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 19)
-	public void wode_mycommunity_testcase19() throws Exception{
+	public void wode_mycommunity_testcase19() {
 		//进入我的社区-草稿箱
 		WoDe.enterDraftsPage(driver);
 		//点击草稿
@@ -362,10 +362,10 @@ public class MyCommunityTest extends AppTestSuite{
 	/**
 	 * @function 草稿箱-删除话题
 	 * @preconditon 接续testcase18 已有草稿
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 20)
-	public void wode_mycommunity_testcase20() throws Exception{
+	public void wode_mycommunity_testcase20() {
 		//进入我的社区-草稿箱
 		WoDe.enterDraftsPage(driver);
 		//删除草稿
@@ -379,10 +379,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 草稿箱-重新发送
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 21)
-	public void wode_mycommunity_testcase21() throws Exception{
+	public void wode_mycommunity_testcase21() {
 		//清空草稿箱
 		WoDe.setDraftsEmpty(driver);
 		//进入帮买车，添加话题草稿
@@ -399,10 +399,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 收到的赞-进入话题详情页
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 22)
-	public void wode_mycommunity_testcase22() throws Exception{
+	public void wode_mycommunity_testcase22() {
 		//进入我的社区-收到的赞
 		WoDe.enterReceivedPraisePage(driver);
 		//如果有收到的赞，点击
@@ -422,10 +422,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 收到的赞-个人主页
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 23)
-	public void wode_mycommunity_testcase23() throws Exception{
+	public void wode_mycommunity_testcase23() {
 		//进入我的社区-收到的赞
 		WoDe.enterReceivedPraisePage(driver);
 		//点击头像
@@ -438,10 +438,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 收到的评论-进入话题详情页
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 24)
-	public void wode_mycommunity_testcase24() throws Exception{
+	public void wode_mycommunity_testcase24() {
 		//进入我的社区-收到的评论
 		WoDe.enterReceivedCommentPage(driver);
 		//如果有收到的赞，点击
@@ -461,10 +461,10 @@ public class MyCommunityTest extends AppTestSuite{
 		
 	/**
 	 * @function 收到的评论-个人主页
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 25)
-	public void wode_mycommunity_testcase25() throws Exception{
+	public void wode_mycommunity_testcase25() {
 		//进入我的社区-收到的评论
 		WoDe.enterReceivedCommentPage(driver);
 		//点击头像
@@ -477,10 +477,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 收到的评论-评论
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 26)
-	public void wode_mycommunity_testcase26() throws Exception{
+	public void wode_mycommunity_testcase26() {
 		//进入我的社区-收到的评论
 		WoDe.enterReceivedCommentPage(driver);
 		//点击评论
@@ -501,10 +501,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 提到我的-话题详情页
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 27)
-	public void wode_mycommunity_testcase27() throws Exception{
+	public void wode_mycommunity_testcase27() {
 		//进入我的社区-提到我的
 		WoDe.enterMentionedMePage(driver);
 		//点击进入话题详情页面
@@ -522,10 +522,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 提到我的-他人主页
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 28)
-	public void wode_mycommunity_testcase28() throws Exception{
+	public void wode_mycommunity_testcase28() {
 		//进入我的社区-提到我的
 		WoDe.enterMentionedMePage(driver);
 		//点击进入他人主页
@@ -543,10 +543,10 @@ public class MyCommunityTest extends AppTestSuite{
 	
 	/**
 	 * @function 社区通知
-	 * @throws Exception
+	 * @
 	 */
 	@Test(priority = 29)
-	public void wode_mycommunity_testcase29() throws Exception{
+	public void wode_mycommunity_testcase29() {
 		//进入我的社区-社区通知
 		WoDe.enterCommunityNotificationPage(driver);
 		//检查进入社区通知成功

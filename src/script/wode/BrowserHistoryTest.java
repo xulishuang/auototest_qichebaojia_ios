@@ -10,10 +10,10 @@ import models.WoDe;
 public class BrowserHistoryTest extends AppTestSuite {
 	  /**
 	   * @function 车型-浏览历史
-	   * @throws Exception
+	   * @
 	   */
 	  @Test(priority=1)
-	  public void wode_browserhistory_testcase1() throws Exception{
+	  public void wode_browserhistory_testcase1() {
 		  //清空车型浏览历史
 		  WoDe.setModelsBrowseEmpty(driver);
 		  //进入新车，点击某品牌车型
@@ -33,10 +33,10 @@ public class BrowserHistoryTest extends AppTestSuite {
 	  /**
 	   * @function 车型-清空浏览历史
 	   * @precondition 接续testcase1
-	   * @throws Exception
+	   * @
 	   */
 	  @Test(priority=2)
-	  public void wode_browserhistory_testcase2() throws Exception{
+	  public void wode_browserhistory_testcase2() {
 		  //清空车型浏览历史
 		  WoDe.setModelsBrowseEmpty(driver);
 		  //进入浏览历史
@@ -49,10 +49,10 @@ public class BrowserHistoryTest extends AppTestSuite {
 	  
 	 /**
 	  * @function 经销商-浏览历史
-	  * @throws Exception
+	  * @
 	  */
 	  @Test(priority = 3)
-	  public void wode_browserhistory_testcase3() throws Exception{
+	  public void wode_browserhistory_testcase3() {
 		  //清空经销商浏览历史
 		  WoDe.setDealersBrowseEmpty(driver);
 		  //添加经销商浏览记录
@@ -75,10 +75,10 @@ public class BrowserHistoryTest extends AppTestSuite {
 	  
 	  /**
 	   * @function 清空经销商浏览记录
-	   * @throws Exception
+	   * @
 	   */
 	  @Test(priority = 4)
-	  public void wode_browserhistory_testcase4() throws Exception{
+	  public void wode_browserhistory_testcase4() {
 		  //清空经销商浏览历史
 		  WoDe.setDealersBrowseEmpty(driver);
 		  //进入浏览历史
@@ -92,7 +92,7 @@ public class BrowserHistoryTest extends AppTestSuite {
 	  
 	  //添加降级浏览记录
 	  @Test(priority = 5)
-	  public void wode_browserhistory_testcase5() throws Exception{
+	  public void wode_browserhistory_testcase5() {
 		  //清空降价浏览记录
 		  WoDe.setCutsBrowseEmpty(driver);
 		  //添加降价浏览记录
@@ -115,10 +115,10 @@ public class BrowserHistoryTest extends AppTestSuite {
 	  
 	  /**
 	   * @function 清空降价浏览记录
-	   * @throws Exception
+	   * @
 	   */
 	  @Test(priority = 6)
-	  public void wode_browserhistory_testcase6() throws Exception{
+	  public void wode_browserhistory_testcase6() {
 		  //清空降价浏览历史
 		  WoDe.setCutsBrowseEmpty(driver);
 		  //进入浏览历史
