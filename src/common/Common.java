@@ -282,10 +282,10 @@ public class Common {
      * @time 2017-5-31
      */
 	@SuppressWarnings("rawtypes")
-	public static void multiBack (IOSDriver driver, int num) throws InterruptedException{
+	public static void multiBack (IOSDriver driver, int num){
 		for (int i=0;i<num;i++){
 			Common.back(driver);
-			Thread.sleep(1000);
+			Common.sleep(driver,1);
 		}
 	}
 	
@@ -453,6 +453,17 @@ public class Common {
     		sb.append(base.charAt(number));
     	}
     	return sb.toString();
+    }
+    
+    @SuppressWarnings("rawtypes")
+	public static void sleep(IOSDriver driver, int seconds){
+    	try{
+    		Thread.sleep(seconds*1000);
+    	}catch(InterruptedException e){
+    		//TODO Auto-generated catch block
+    		e.printStackTrace();
+    	}
+    	
     }
 
 }
