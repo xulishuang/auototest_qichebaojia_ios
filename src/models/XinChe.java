@@ -23,8 +23,8 @@ public class XinChe {
 	@SuppressWarnings("rawtypes")
 	public static void enterZongShuPage(IOSDriver driver){
 		Common.touchText(driver, "新车");
-		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[3]");
-		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[2]");
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[3]"); //奥迪A4L
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[2]");//第一个车款
 	}
 	
 	/** 
