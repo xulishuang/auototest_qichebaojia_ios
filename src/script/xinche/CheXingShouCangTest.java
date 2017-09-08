@@ -23,7 +23,7 @@ public class CheXingShouCangTest extends AppTestSuite{
 		//进入车型收藏
 		XinChe.enterCheXingShouCangPage(driver);
 		//检查车型收藏为空
-		Assert.assertFalse(Common.checkXpathExist(driver,"//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]"), "检查车型收藏为空");
+		Assert.assertTrue(Common.checkTextExist(driver,"暂无收藏相关车型"), "检查车型收藏为空");
 		//返回首页
 		Common.back(driver);
 	}
