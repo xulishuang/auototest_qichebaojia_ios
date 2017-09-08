@@ -57,10 +57,11 @@ public class CheXingShouCangTest extends AppTestSuite{
 		//进入车型收藏
 		Common.touchText(driver,"我的");
 		Common.touchText(driver, "车型收藏");
-		//删除车型
+		//删除车型（1条数据，删除=清空）
 		Common.touchTopRight(driver);//点击编辑
-		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]/UIAButton[1]");//点击-号
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]");//选中
 		Common.touchText(driver, "删除");//点击删除
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");//确认删除
 		//检查车型删除成功
 		Assert.assertTrue(Common.checkTextExist(driver, "暂无收藏相关车型")&&Common.checkTextExist(driver, "添加车型"), "成功返回到车型收藏页，删除成功！");
         //返回首页
@@ -117,8 +118,9 @@ public class CheXingShouCangTest extends AppTestSuite{
 		Common.touchText(driver, "车款");
 		//删除车款
 		Common.touchTopRight(driver);//点击编辑
-		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]/UIAButton[1]");//点击-号
-		Common.touchText(driver, "删除");//点击删除	
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]");//选中
+		Common.touchText(driver, "删除");//点击删除
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");//确认删除	
 		//检查删除车款成功
 		Assert.assertTrue(Common.checkTextExist(driver, "暂无收藏相关车款"), "检查删除车款成功");
 		//返回首页
@@ -176,8 +178,9 @@ public class CheXingShouCangTest extends AppTestSuite{
 		Common.touchText(driver, "经销商");
 		//删除经销商收藏
 		Common.touchTopRight(driver);//点击编辑
-		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]/UIAButton[1]");//点击-号
-		Common.touchText(driver, "删除");//点击删除	
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]");//选中
+		Common.touchText(driver, "删除");//点击删除
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");//确认删除	
 		//检查删除经销商成功
 		Assert.assertTrue(Common.checkTextExist(driver, "暂无收藏相关经销商"), "检查删除经销商成功");
 		//返回首页
@@ -233,8 +236,9 @@ public class CheXingShouCangTest extends AppTestSuite{
 		Common.touchText(driver, "二手车");
 		//删除二手车收藏
 		Common.touchTopRight(driver);//点击编辑
-		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]/UIAButton[1]");//点击-号
-		Common.touchText(driver, "删除");//点击删除	
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]");//选中
+		Common.touchText(driver, "删除");//点击删除
+		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]");//确认删除
 		//检查删除二手车成功
 		Assert.assertTrue(Common.checkTextExist(driver, "暂无收藏相关二手车"), "检查删除二手车成功");
 		//返回首页
