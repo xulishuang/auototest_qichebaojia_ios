@@ -20,13 +20,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import io.appium.java_client.ios.IOSDriver;
 
 public class Common {
-	@SuppressWarnings("rawtypes")
-	public IOSDriver driver;
+//	@SuppressWarnings("rawtypes")
+//	public IOSDriver driver;
 
-	@SuppressWarnings("rawtypes")
-	public Common(IOSDriver driver){
-		this.driver=driver;
-	}
+//	@SuppressWarnings("rawtypes")
+//	public Common(IOSDriver driver){
+//		this.driver=driver;
+//	}
+	
 	/** 
 	 * 上滑
 	 *  
@@ -131,7 +132,7 @@ public class Common {
 	 *
 	 * @param driver 
 	 * @param xpath 
-	 */ 
+	 */
 	@SuppressWarnings("rawtypes")
 	public static void touchXpath(IOSDriver driver, String xpath){
 		Common.waitForVisible(driver, By.xpath(xpath), 20);
