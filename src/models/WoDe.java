@@ -366,7 +366,7 @@ public class WoDe {
 	public static void setModelsBrowseEmpty(IOSDriver driver) {
 		//进入浏览记录
 		Common.touchText(driver,"我的");
-		Common.touchText(driver, "浏览记录");
+		Common.touchText(driver, "浏览历史");
 		String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]/UIAStaticText[1]"));
 		//清空浏览记录
 		if (!text.equals("您现在还没有浏览任何车型,")){
@@ -389,7 +389,7 @@ public class WoDe {
 	public static void setDealersBrowseEmpty(IOSDriver driver) {
 		//进入浏览记录
 		Common.touchText(driver,"我的");
-		Common.touchText(driver, "浏览记录");
+		Common.touchText(driver, "浏览历史");
 		Common.touchText(driver, "经销商");
 		//清空浏览记录
 		String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]/UIAStaticText[1]"));
@@ -413,7 +413,7 @@ public class WoDe {
 	public static void setCutsBrowseEmpty(IOSDriver driver) {
 		//进入浏览记录
 		Common.touchText(driver,"我的");
-		Common.touchText(driver, "浏览记录");
+		Common.touchText(driver, "浏览历史");
 		Common.touchText(driver, "降价");
 		//清空浏览记录
 		String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIATableCell[1]/UIAStaticText[1]"));
