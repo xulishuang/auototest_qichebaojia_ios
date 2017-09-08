@@ -16,8 +16,8 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	 * 图片-颜色、车款筛选以及切换标签
 	 * 
 	 */	
-	@Test(priority = 1)
-	public void xinche_zipinpaizongshu_testcase1()  {
+//	@Test(priority = 1)
+//	public void xinche_zipinpaizongshu_testcase1()  {
 //		//进入子品牌综述页
 //		XinChe.enterZongShuPage(driver);
 //		//检查进入子品牌综述页面
@@ -25,7 +25,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 //		//点击图片（默认外观标签）
 //		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[1]/UIAButton[1]");
 //		//点击颜色，选择颜色
-//		
+//		   //用例没有写完，原因是inspecter抓取不到页面元素
 //		//检查进入颜色筛选结果页
 //		
 //		//点击车款，选择车款
@@ -35,8 +35,8 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 //		//切换到图解（或官方）标签下
 //		
 //		//返回首页
-		
-	}
+//		
+//	}
 	
 	/** 
 	 * 油耗-页面跳转
@@ -47,7 +47,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 		//进入子品牌综述页
 		XinChe.enterZongShuPage(driver);
 		//点击油耗
-		Common.touchText(driver,"油耗");
+		Common.touchText(driver,"百公里油耗");
 		//检查进入油耗页面
 		String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAStaticText[1]"));
 		Assert.assertEquals(text, "油耗","enter official fuel page");
@@ -67,15 +67,14 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	  //进入子品牌综述页
 	  XinChe.enterZongShuPage(driver);
 	  //点击参数配置
-	  Common.touchText(driver,"参数");
+	  Common.touchText(driver,"参数配置");
 	  //检查进入参数配置页
 	  Assert.assertTrue(Common.checkTextExist(driver, "参数配置"),"进入参数配置页面");
 	  //点击收藏车款
 //	  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[1]");
 	  Common.touchText(driver, "para unfavor");
 	  //检查显示已收藏
-	  String text=Common.getText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAStaticText[3]"));
-	  Assert.assertEquals(text, "已收藏", "检查显示已收藏");
+	  Assert.assertTrue(Common.checkTextExist(driver, "已收藏"),"检查显示已收藏");
 	  //返回到新车
 	  Common.multiBack(driver, 2);
 	  Common.swipeToRight(driver, 500, 1);
@@ -88,7 +87,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	  Common.back(driver);
 	  //再次进入参数配置页面
 	  XinChe.enterZongShuPage(driver);
-	  Common.touchText(driver, "参数");
+	  Common.touchText(driver, "参数配置");
 	  //点击已收藏
 //	  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[1]");
 	  Common.touchText(driver, "para favor");
@@ -117,7 +116,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 		//进入子品牌综述页
 		XinChe.enterZongShuPage(driver);
 		//点击参数配置
-		Common.touchText(driver,"参数");
+		Common.touchText(driver,"参数配置");
 		//检查进入参数配置页
 		Assert.assertTrue(Common.checkTextExist(driver, "参数配置"),"进入参数配置页面");
 		//点击询底价
@@ -139,7 +138,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 		//进入子品牌综述页
 		XinChe.enterZongShuPage(driver);
 		//点击参数配置
-		Common.touchText(driver,"参数");
+		Common.touchText(driver,"参数配置");
 		//检查进入参数配置页
 		Assert.assertTrue(Common.checkTextExist(driver, "参数配置"),"进入参数配置页面");
 		//点击隐藏相同项
@@ -160,7 +159,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 		//进入子品牌综述页面
 		XinChe.enterZongShuPage(driver);
 		//点击参数配置
-		Common.touchText(driver,"参数");
+		Common.touchText(driver,"参数配置");
 		//点击分类
 		Common.touchText(driver, "分类");
 		//点击某项：灯光
@@ -181,10 +180,9 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 		//进入子品牌综述页
 		XinChe.enterZongShuPage(driver);
 		//点击参数配置
-		Common.touchText(driver,"参数");
+		Common.touchText(driver,"参数配置");
 		//点击筛选
-		Common.touchText(driver,"筛选");
-//		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[3]");
+		Common.touchTopRight(driver);
 		//选择年款:2017
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[1]");
 		Assert.assertTrue(Common.checkIsSelected(driver, "//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[1]"), "2017 year is checked");
