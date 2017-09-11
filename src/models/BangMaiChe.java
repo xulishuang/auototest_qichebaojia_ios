@@ -78,12 +78,12 @@ public class BangMaiChe {
 	    Common.touchText(driver, "添加车款");
 	    Common.touchText(driver, "奥迪");
 	    Common.touchText(driver, "奥迪A4L");
-	    Common.touchText(driver, "40 TFSI 进取型 Plus");
+	    Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]");
         
 	    Common.touchText(driver, "添加车款");// xpath://UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[2]
 	    Common.touchText(driver, "奥迪");
 	    Common.touchText(driver, "奥迪A6L");
-	    Common.touchText(driver, "TFSI 技术型");
+	    Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]");
 	}
 	
 	/** 
