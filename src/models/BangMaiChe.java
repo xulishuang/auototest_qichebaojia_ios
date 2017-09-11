@@ -48,6 +48,23 @@ public class BangMaiChe {
 		Common.touchText(driver, "投票");
 	}
 	
+	/**
+	 * @function 进入文章发帖页面
+	 * @author xulishuang
+	 * @time 2017-8-10
+	 */
+	@SuppressWarnings("rawtypes")
+	public static void enterArticleTopicPage(IOSDriver driver){
+		//点击进入帮买车
+		Common.touchText(driver,"帮买车");
+		//点击最新
+		Common.touchText(driver,"最新");
+		//点击发帖
+		Common.touchText(driver,"发帖");
+		//点击投票icon
+		Common.touchText(driver, "文章");
+	}
+	
 	/** 
 	 * @function “帮买车—投票-车款投票”中添加两种车款
 	 * @param driver
@@ -107,9 +124,8 @@ public class BangMaiChe {
 		Common.touchText(driver, "话题");
 		//输入内容
 		Common.sendText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATextView[1]"), "签到啦啦啦啦");
-		//点击提交
-//		Common.touchText(driver, "发布");
-		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[3]");
+		//点击发布
+		Common.touchText(driver, "发布");
 	}
 	
 	/** 
@@ -135,8 +151,7 @@ public class BangMaiChe {
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[4]/UIAButton[1]");
 		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[4]/UIAButton[2]");
 		//点击发布
-//		Common.touchText(driver,"发布");
-		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[3]");
+		Common.touchText(driver,"发布");
 	}
 	
 	/** 
@@ -190,7 +205,7 @@ public class BangMaiChe {
 		//点击取消
 		Common.touchText(driver, "取消");
 		//点击保存草稿
-		Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]"); 
+		Common.touchText(driver,"保存草稿"); 
 	}
 
 }
