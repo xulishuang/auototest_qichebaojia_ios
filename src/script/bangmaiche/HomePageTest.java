@@ -1,5 +1,6 @@
 package script.bangmaiche;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.*; 
 import script.AppTestSuite;
@@ -17,17 +18,23 @@ public class HomePageTest extends AppTestSuite{
 		  //点击进入帮买车
 		  Common.touchText(driver,"帮买车");
 		  //点击推荐
-		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[1]");
+		  Common.touchText(driver, "推荐");
+//		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[1]");
 		  //检查进入推荐页面
-		  Assert.assertTrue(Common.checkIsSelected(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[1]"), "检查进入推荐页面");
+		  Assert.assertTrue(Common.checkIsSelected(driver, By.name("推荐")), "检查进入推荐页面");
+//		  Assert.assertTrue(Common.checkIsSelected(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[1]"), "检查进入推荐页面");
 		  //点击最新
-		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[2]");
+		  Common.touchText(driver, "最新");
+//		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[2]");
 		  //检查进入最新页面
-		  Assert.assertTrue(Common.checkIsSelected(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[2]"), "检查进入最新页面");
+		  Assert.assertTrue(Common.checkIsSelected(driver, By.name("最新")), "检查进入最新页面");
+//		  Assert.assertTrue(Common.checkIsSelected(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[2]"), "检查进入最新页面");
 		  //点击订阅
-		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[3]");
+		  Common.touchText(driver, "订阅");
+//		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[3]");
 		  //检查进入订阅页面
-		  Assert.assertTrue(Common.checkIsSelected(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[3]"), "检查进入订阅页面");
+		  Assert.assertTrue(Common.checkIsSelected(driver, By.name("订阅")), "检查进入订阅页面");
+//		  Assert.assertTrue(Common.checkIsSelected(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[3]"), "检查进入订阅页面");
 	  }
 	  
 	  /** 
