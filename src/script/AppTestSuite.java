@@ -55,6 +55,13 @@ public class AppTestSuite {
 				Common.touchText(driver, "不保存");
 			}
 		}
+		
+		if(Common.checkTextExist(driver, "取消")){
+			Common.touchText(driver, "取消");
+			if(Common.checkTextExist(driver, "不保存")){
+				Common.touchText(driver, "不保存");
+			}
+		}
 		  
 		while(Common.checkTextExist(driver, "navBackButton nor")||Common.checkTextExist(driver,"old navBackButton nor")){
 			  Common.back(driver);
