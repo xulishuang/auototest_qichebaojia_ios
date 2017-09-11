@@ -19,22 +19,16 @@ public class HomePageTest extends AppTestSuite{
 		  Common.touchText(driver,"帮买车");
 		  //点击推荐
 		  Common.touchText(driver, "推荐");
-//		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[1]");
 		  //检查进入推荐页面
 		  Assert.assertTrue(Common.checkIsSelected(driver, By.name("推荐")), "检查进入推荐页面");
-//		  Assert.assertTrue(Common.checkIsSelected(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[1]"), "检查进入推荐页面");
 		  //点击最新
 		  Common.touchText(driver, "最新");
-//		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[2]");
 		  //检查进入最新页面
 		  Assert.assertTrue(Common.checkIsSelected(driver, By.name("最新")), "检查进入最新页面");
-//		  Assert.assertTrue(Common.checkIsSelected(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[2]"), "检查进入最新页面");
 		  //点击订阅
 		  Common.touchText(driver, "订阅");
-//		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[3]");
 		  //检查进入订阅页面
 		  Assert.assertTrue(Common.checkIsSelected(driver, By.name("订阅")), "检查进入订阅页面");
-//		  Assert.assertTrue(Common.checkIsSelected(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[3]"), "检查进入订阅页面");
 	  }
 	  
 	  /** 
@@ -47,7 +41,7 @@ public class HomePageTest extends AppTestSuite{
 		  //点击进入帮买车
 		  Common.touchText(driver,"帮买车");
 		  //点击订阅
-		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[3]");
+		  Common.touchText(driver, "订阅");
 		  //清空已订阅内容
 		  	//无法区别订阅与已订阅按钮，故自动化无法实现清空操作
 		  //检查订阅内容为空
@@ -69,14 +63,15 @@ public class HomePageTest extends AppTestSuite{
 		  //点击进入帮买车
 		  Common.touchText(driver,"帮买车");
 		  //点击订阅
-		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[3]");
-		  //点击订阅icon进入订阅专题进行订阅
-		  Common.touchText(driver, "subscribeBtnNor");
-		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[1]");
+		  Common.touchText(driver, "订阅");
+		  //点击开始订阅进入订阅专题进行订阅
+		  Common.touchText(driver,"开始订阅");
+		  Common.touchText(driver, "specialTopicSubscribe");
 		  //返回
 		  Common.touchText(driver,"nav right close");
 		  //检查显示订阅内容
-		  Assert.assertTrue(Common.checkXpathExist(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIATableView[1]/UIATableCell[1]"), "检查显示订阅内容");
+		  Common.sleep(driver, 2);
+		  Assert.assertFalse(Common.checkTextExist(driver, "开始订阅"), "检查显示订阅内容");
 		  //点击话题
 		  Common.touchXpath(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIATableView[1]/UIATableCell[1]/UIAStaticText[1]");
 		  //检查进入话题详情页
@@ -95,16 +90,17 @@ public class HomePageTest extends AppTestSuite{
 		  //点击进入帮买车
 		  Common.touchText(driver,"帮买车");
 		  //点击订阅
-		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[3]");
-		  //点击订阅icon进入订阅专题进行订阅
-		  Common.touchText(driver, "subscribeBtnNor");
-		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[1]");
+		  Common.touchText(driver, "订阅");
+		  //点击订阅专题进入订阅专题进行订阅
+		  Common.touchText(driver, "订阅专题");
+		  Common.touchText(driver, "specialTopicSubscribed");
 		  //确认取消
 		  Common.touchText(driver, "取消订阅");
 		  //返回
 		  Common.touchText(driver,"nav right close");
 		  //检查取消订阅成功
-		  Assert.assertFalse(Common.checkXpathExist(driver, "//UIAApplication[1]/UIAWindow[1]/UIAScrollView[2]/UIATableView[1]/UIATableCell[1]"), "检查显示订阅内容");
+		  Common.sleep(driver, 2);
+		  Assert.assertTrue(Common.checkTextExist(driver, "开始订阅"), "检查显示订阅内容");
 	  }
 	  
 	  /** 
@@ -116,17 +112,17 @@ public class HomePageTest extends AppTestSuite{
 		  //点击进入帮买车
 		  Common.touchText(driver,"帮买车");
 		  //点击订阅
-		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[3]");
-		  //点击订阅icon进入订阅专题进行订阅
-		  Common.touchText(driver, "subscribeBtnNor");
-		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[1]");
+		  Common.touchText(driver, "订阅");
+		  //点击订阅专题进入订阅专题进行订阅
+		  Common.touchText(driver,"订阅专题");
+		  Common.touchText(driver, "specialTopicSubscribe");
 		  //返回
 		  Common.touchText(driver,"nav right close");
 		  //检查显示订阅内容
 		  Assert.assertFalse(Common.checkTextExist(driver, "开始订阅"), "检查显示订阅内容");
 		  //恢复环境，取消订阅
-		  Common.touchText(driver, "subscribeBtnNor");
-		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[1]");
+		  Common.touchText(driver,"订阅专题");
+		  Common.touchText(driver, "specialTopicSubscribed");
 		  Common.touchText(driver, "取消订阅");
 		  Common.touchText(driver,"nav right close");
 	  }
@@ -140,9 +136,9 @@ public class HomePageTest extends AppTestSuite{
 		  //点击进入帮买车
 		  Common.touchText(driver,"帮买车");
 		  //点击订阅
-		  Common.touchXpath(driver,"//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[3]");
-		  //点击订阅icon进入订阅专题进行订阅
-		  Common.touchText(driver, "subscribeBtnNor");
+		  Common.touchText(driver, "订阅");
+		  //点击订阅专题进入订阅专题进行订阅
+		  Common.touchText(driver, "订阅专题");
 		  //检查进入订阅专题页面
 		  Assert.assertTrue(Common.checkTextExist(driver, "订阅专题"),"检查进入订阅专题页面");
 		  //点击第一条专题
@@ -162,9 +158,10 @@ public class HomePageTest extends AppTestSuite{
 		  Common.touchText(driver,"取消");
 		  //点击发帖
 		  Common.touchText(driver, "发帖");
-		  //检查显示显示话题、投票、关闭icon
+		  //检查显示显示话题、投票、文章、关闭icon
 		  Assert.assertTrue(Common.checkTextExist(driver, "话题"), "检查显示话题icon");
 		  Assert.assertTrue(Common.checkTextExist(driver,"投票"), "检查显示投票icon");
+		  Assert.assertTrue(Common.checkTextExist(driver,"文章"), "检查显示文章icon");
 		  Assert.assertTrue(Common.checkTextExist(driver, "community sendtopic close"), "检查显示关闭icon");
 		  //收起发帖icon
 		  Common.touchText(driver, "community sendtopic close");
