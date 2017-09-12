@@ -123,7 +123,7 @@ public class BangMaiChe {
 		//点击话题icon
 		Common.touchText(driver, "话题");
 		//输入内容
-		Common.sendText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATextView[1]"), "签到啦啦啦啦");
+		Common.sendText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATextView[1]"), "又是晴朗的一天");
 		//点击发布
 		Common.touchText(driver, "发布");
 	}
