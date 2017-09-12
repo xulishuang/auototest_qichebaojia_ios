@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [iphone 6 plus 9.3.3]">
+  <listeners>
+    <listener class-name="listener.TestResultListener"/>
+    <listener class-name="listener.RetryListener"/>
+    <listener class-name="listener.PowerEmailableReporter"/>
+  </listeners>
+  <test name="debug(failed)">
     <classes>
-      <class name="script.ershouche.HomePageTest">
+      <class name="script.bangmaiche.TopicTest">
         <methods>
           <include name="beforeSuite"/>
-          <include name="ershouche_homepage_testcase3"/>
+          <include name="bangmaiche_topic_testcase4"/>
+          <include name="bangmaiche_topic_testcase12"/>
           <include name="afterMethod"/>
+          <include name="bangmaiche_topic_testcase2"/>
+          <include name="bangmaiche_topic_testcase5"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- script.ershouche.HomePageTest -->
+      </class> <!-- script.bangmaiche.TopicTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- debug(failed) -->
+</suite> <!-- Failed suite [iphone 6 plus 9.3.3] -->
