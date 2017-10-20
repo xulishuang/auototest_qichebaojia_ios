@@ -15,7 +15,7 @@ public class ZiPinPaiZongShuTest extends AppTestSuite {
 	/** 
 	 * 图片-颜色、车款筛选以及切换标签
 	 * 
-	 */	
+	 */
 //	@Test(priority = 1)
 //	public void xinche_zipinpaizongshu_testcase1()  {
 //		//进入子品牌综述页
