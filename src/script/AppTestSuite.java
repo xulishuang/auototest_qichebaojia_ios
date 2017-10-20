@@ -2,11 +2,14 @@ package script;
 
 import java.net.URL;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 import common.Common;
+import constant.Text;
 import io.appium.java_client.ios.IOSDriver;
 
 public class AppTestSuite {
@@ -39,6 +42,16 @@ public class AppTestSuite {
 //		capabilities.setCapability("autoAcceptAlerts", true);// 自动接受提示信息
 		driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 //		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		
+		//login
+		Common.touchText(driver, "我的");
+		if(Common.checkTextExist(driver, "账号登录")){
+			Common.touchText(driver, "账号登录");
+			Common.sendText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATextField[1]"), Text.ACCOUNT);
+			Common.sendText(driver, By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIASecureTextField[1]"), Text.PASSWORD);
+			Common.touchText(driver, "登录");
+			
+		}
 	}
 	
 	@AfterSuite
@@ -49,17 +62,19 @@ public class AppTestSuite {
 	
 	@AfterMethod
 	public void afterMethod() throws InterruptedException {
-		if(Common.checkTextExist(driver, "nav right close")){
-			Common.touchText(driver, "nav right close");
-			if(Common.checkTextExist(driver, "不保存")){
-				Common.touchText(driver, "不保存");
-			}
-		}
+//		if(Common.checkTextExist(driver, "nav right close")){
+//			Common.touchText(driver, "nav right close");
+//			if(Common.checkTextExist(driver, "不保存")){
+//				Common.touchText(driver, "不保存");
+//			}
+//		}
 		
 		if(Common.checkTextExist(driver, "取消")){
 			Common.touchText(driver, "取消");
 			if(Common.checkTextExist(driver, "不保存")){
 				Common.touchText(driver, "不保存");
+			}else if(Common.checkTextExist(driver, "取消")){
+				Common.touchText(driver, "取消");
 			}
 		}
 		  

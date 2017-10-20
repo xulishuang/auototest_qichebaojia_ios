@@ -56,7 +56,7 @@ public class TopicTest extends AppTestSuite {
 	 */	
   @Test(priority = 2)
   public void bangmaiche_topic_testcase2(){
-	  //进入帮买车-罪行
+	  //进入帮买车-最新
 	  Common.touchText(driver, "帮买车");
 	  Common.touchText(driver, "最新");
 	  //进入testcase1中已发的普通话题

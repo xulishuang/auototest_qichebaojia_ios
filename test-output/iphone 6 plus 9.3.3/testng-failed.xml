@@ -8,17 +8,16 @@
   </listeners>
   <test name="debug(failed)">
     <classes>
-      <class name="script.bangmaiche.TopicTest">
+      <class name="script.bangmaiche.SearchTest">
         <methods>
           <include name="beforeSuite"/>
-          <include name="bangmaiche_topic_testcase4"/>
-          <include name="bangmaiche_topic_testcase12"/>
+          <include name="bangmaiche_search_testcase2"/>
+          <include name="bangmaiche_search_testcase1"/>
+          <include name="bangmaiche_search_testcase4"/>
+          <include name="bangmaiche_search_testcase3"/>
           <include name="afterMethod"/>
-          <include name="bangmaiche_topic_testcase2"/>
-          <include name="bangmaiche_topic_testcase5"/>
-          <include name="afterSuite"/>
         </methods>
-      </class> <!-- script.bangmaiche.TopicTest -->
+      </class> <!-- script.bangmaiche.SearchTest -->
     </classes>
   </test> <!-- debug(failed) -->
 </suite> <!-- Failed suite [iphone 6 plus 9.3.3] -->

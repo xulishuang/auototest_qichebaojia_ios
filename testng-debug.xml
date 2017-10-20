@@ -7,20 +7,18 @@
     	<listener class-name="listener.PowerEmailableReporter" />
 	</listeners>
   
-  <!-- <test name="faxian" preserve-order="true">
-    <parameter name = "port" value = "4723"/>
- 	<parameter name = "udid" value = "9d2b5af54cc39ceba892c63ce9891a245fffe2e8"/>
+  <!-- <test name="wode" preserve-order="true">
     <classes>  
-      <class name="script.faxian.CheXingDuiBiTest"/> 
+      <class name="script.wode.BrowserHistoryTest"/> 
       	<methods>
-       	 <include name="faxian_chexingduibi_testCase4" />
+       	 <include name="wode_browserhistory_testcase3" />
       	</methods>
     </classes>  
   </test> -->
   
-  <test name="ershouche" preserve-order="true">
+  <test name="debug" preserve-order="true">
     <classes>  
-      <class name="script.ershouche.CheYuanXiangQingTest"/>
+      <class name="script.bangmaiche.SpecialTopicTest"/>
     </classes>  
   </test>
 

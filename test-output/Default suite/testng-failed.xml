@@ -3,22 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="script.xinche.ZiPinPaiZongShuTest">
+      <class name="script.bangmaiche.TopicTest">
         <methods>
-          <include name="xinche_zipinpaizongshu_testcase16"/>
-          <include name="xinche_zipinpaizongshu_testcase14"/>
-          <include name="xinche_zipinpaizongshu_testcase11"/>
           <include name="beforeSuite"/>
-          <include name="xinche_zipinpaizongshu_testcase15"/>
-          <include name="xinche_zipinpaizongshu_testcase9"/>
           <include name="afterMethod"/>
-          <include name="xinche_zipinpaizongshu_testcase10"/>
-          <include name="xinche_zipinpaizongshu_testcase8"/>
-          <include name="xinche_zipinpaizongshu_testcase13"/>
-          <include name="xinche_zipinpaizongshu_testcase7"/>
-          <include name="xinche_zipinpaizongshu_testcase12"/>
+          <include name="bangmaiche_topic_testcase5"/>
+          <include name="afterSuite"/>
         </methods>
-      </class> <!-- script.xinche.ZiPinPaiZongShuTest -->
+      </class> <!-- script.bangmaiche.TopicTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

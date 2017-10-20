@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/9</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 07 15:05:07 CST 2017</td>
+<td>Started on:</td><td>Tue Sep 12 10:23:38 CST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>1270 seconds (1270653 ms)</td>
+<tr><td>Total time:</td><td>931 seconds (931058 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,217 +68,6 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.afterMethod()'><b>afterMethod</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
-<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;N/A&apos;, ip: &apos;N/A&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.7.0_71&apos;
-Driver info: driver.version: AppiumDriver
-Session ID: 989a9406-9383-4642-89cd-e2677968708f
-Capabilities [{platform=MAC, javascriptEnabled=true, browserName=iOS, networkConnectionEnabled=false, noSign=true, udid=279e59757a20062b7fb2f82586ca7ed5426352c4, desired={platform=MAC, platformVersion=8.1.2, deviceName=iPhone 6 Plus, platformName=iOS, bundleId=com.bitauto.carquote, device=iPhone 6 Plus, noSign=true, udid=279e59757a20062b7fb2f82586ca7ed5426352c4}, locationContextEnabled=false, platformVersion=8.1.2, databaseEnabled=false, deviceName=iPhone 6 Plus, platformName=iOS, webStorageEnabled=false, bundleId=com.bitauto.carquote, device=iPhone 6 Plus, warnings={}, takesScreenshot=true}]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:388)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByName(RemoteWebDriver.java:469)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementsByName(DefaultGenericMobileDriver.java:79)
-	at io.appium.java_client.AppiumDriver.findElementsByName(AppiumDriver.java:147)
-	at org.openqa.selenium.By$ByName.findElements(By.java:295)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:351)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:32)
-	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:126)
-	at common.Common.checkTextExist(Common.java:171)
-	at script.AppTestSuite.afterMethod(AppTestSuite.java:52)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 39 more
-Caused by: java.net.ConnectException: Connection refused
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:579)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 52 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace2053353628", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2053353628'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;N/A&apos;, ip: &apos;N/A&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.7.0_71&apos;
-Driver info: driver.version: AppiumDriver
-Session ID: 989a9406-9383-4642-89cd-e2677968708f
-Capabilities [{platform=MAC, javascriptEnabled=true, browserName=iOS, networkConnectionEnabled=false, noSign=true, udid=279e59757a20062b7fb2f82586ca7ed5426352c4, desired={platform=MAC, platformVersion=8.1.2, deviceName=iPhone 6 Plus, platformName=iOS, bundleId=com.bitauto.carquote, device=iPhone 6 Plus, noSign=true, udid=279e59757a20062b7fb2f82586ca7ed5426352c4}, locationContextEnabled=false, platformVersion=8.1.2, databaseEnabled=false, deviceName=iPhone 6 Plus, platformName=iOS, webStorageEnabled=false, bundleId=com.bitauto.carquote, device=iPhone 6 Plus, warnings={}, takesScreenshot=true}]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:388)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByName(RemoteWebDriver.java:469)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementsByName(DefaultGenericMobileDriver.java:79)
-	at io.appium.java_client.AppiumDriver.findElementsByName(AppiumDriver.java:147)
-	at org.openqa.selenium.By$ByName.findElements(By.java:295)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:351)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:32)
-	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:126)
-	at common.Common.checkTextExist(Common.java:171)
-	at script.AppTestSuite.afterMethod(AppTestSuite.java:52)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 39 more
-Caused by: java.net.ConnectException: Connection refused
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:579)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 52 more
-</pre></div></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.afterMethod()'><b>afterMethod</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
-<td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
-<tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.afterMethod()'><b>afterMethod</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
-<td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
-<tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.afterMethod()'><b>afterMethod</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
-<td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
-<tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.afterMethod()'><b>afterMethod</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
-<td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
-<tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.afterMethod()'><b>afterMethod</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
-<td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
-<tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.afterMethod()'><b>afterMethod</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
-<td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
-<tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.afterMethod()'><b>afterMethod</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
-<td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
-<tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.afterMethod()'><b>afterMethod</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
-<td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
-<tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.afterMethod()'><b>afterMethod</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
-<td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -286,21 +75,18 @@ Caused by: java.net.ConnectException: Connection refused
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.xinche_zipinpaizongshu_testcase7()'><b>xinche_zipinpaizongshu_testcase7</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
-<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+<td title='script.bangmaiche.TopicTest.bangmaiche_topic_testcase5()'><b>bangmaiche_topic_testcase5</b><br>Test class: script.bangmaiche.TopicTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 20 seconds waiting for visibility of element located by By.xpath: //UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[4]/UIAButton[4]
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
 System info: host: &apos;N/A&apos;, ip: &apos;N/A&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.7.0_71&apos;
-Driver info: driver.version: IOSDriver
-Session ID: 989a9406-9383-4642-89cd-e2677968708f
+Session ID: bfcbfe78-22bf-458d-b8b2-7ef72624a1db
+Driver info: io.appium.java_client.ios.IOSDriver
 Capabilities [{platform=MAC, javascriptEnabled=true, browserName=iOS, networkConnectionEnabled=false, noSign=true, udid=279e59757a20062b7fb2f82586ca7ed5426352c4, desired={platform=MAC, platformVersion=8.1.2, deviceName=iPhone 6 Plus, platformName=iOS, bundleId=com.bitauto.carquote, device=iPhone 6 Plus, noSign=true, udid=279e59757a20062b7fb2f82586ca7ed5426352c4}, locationContextEnabled=false, platformVersion=8.1.2, databaseEnabled=false, deviceName=iPhone 6 Plus, platformName=iOS, webStorageEnabled=false, bundleId=com.bitauto.carquote, device=iPhone 6 Plus, warnings={}, takesScreenshot=true}]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:865)
-	at common.Common.waitForVisible(Common.java:377)
-	at common.Common.touchXpath(Common.java:137)
-	at script.xinche.ZiPinPaiZongShuTest.xinche_zipinpaizongshu_testcase7(ZiPinPaiZongShuTest.java:190)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at common.Common.waitForVisible(Common.java:381)
+	at common.Common.touchXpath(Common.java:138)
+	at script.bangmaiche.TopicTest.bangmaiche_topic_testcase5(TopicTest.java:156)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -325,47 +111,18 @@ Capabilities [{platform=MAC, javascriptEnabled=true, browserName=iOS, networkCon
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 31 more
-Caused by: java.net.ConnectException: Connection refused
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:579)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 44 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace2078349291", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2078349291'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+</pre></div><a href='#' onClick='toggleBox("stack-trace1227289322", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1227289322'><pre>org.openqa.selenium.TimeoutException: Timed out after 20 seconds waiting for visibility of element located by By.xpath: //UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[4]/UIAButton[4]
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
 System info: host: &apos;N/A&apos;, ip: &apos;N/A&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.7.0_71&apos;
-Driver info: driver.version: IOSDriver
-Session ID: 989a9406-9383-4642-89cd-e2677968708f
+Session ID: bfcbfe78-22bf-458d-b8b2-7ef72624a1db
+Driver info: io.appium.java_client.ios.IOSDriver
 Capabilities [{platform=MAC, javascriptEnabled=true, browserName=iOS, networkConnectionEnabled=false, noSign=true, udid=279e59757a20062b7fb2f82586ca7ed5426352c4, desired={platform=MAC, platformVersion=8.1.2, deviceName=iPhone 6 Plus, platformName=iOS, bundleId=com.bitauto.carquote, device=iPhone 6 Plus, noSign=true, udid=279e59757a20062b7fb2f82586ca7ed5426352c4}, locationContextEnabled=false, platformVersion=8.1.2, databaseEnabled=false, deviceName=iPhone 6 Plus, platformName=iOS, webStorageEnabled=false, bundleId=com.bitauto.carquote, device=iPhone 6 Plus, warnings={}, takesScreenshot=true}]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:865)
-	at common.Common.waitForVisible(Common.java:377)
-	at common.Common.touchXpath(Common.java:137)
-	at script.xinche.ZiPinPaiZongShuTest.xinche_zipinpaizongshu_testcase7(ZiPinPaiZongShuTest.java:190)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at common.Common.waitForVisible(Common.java:381)
+	at common.Common.touchXpath(Common.java:138)
+	at script.bangmaiche.TopicTest.bangmaiche_topic_testcase5(TopicTest.java:156)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -390,88 +147,52 @@ Capabilities [{platform=MAC, javascriptEnabled=true, browserName=iOS, networkCon
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 31 more
-Caused by: java.net.ConnectException: Connection refused
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:579)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 44 more
 </pre></div></td>
-<td>1270</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
+<td>50</td>
+<td>script.bangmaiche.TopicTest@6c9f3578</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.xinche_zipinpaizongshu_testcase10()'><b>xinche_zipinpaizongshu_testcase10</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
+<td title='script.bangmaiche.TopicTest.bangmaiche_topic_testcase1()'><b>bangmaiche_topic_testcase1</b><br>Test class: script.bangmaiche.TopicTest</td>
 <td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
+<td>222</td>
+<td>script.bangmaiche.TopicTest@6c9f3578</td></tr>
 <tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.xinche_zipinpaizongshu_testcase11()'><b>xinche_zipinpaizongshu_testcase11</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
+<td title='script.bangmaiche.TopicTest.bangmaiche_topic_testcase12()'><b>bangmaiche_topic_testcase12</b><br>Test class: script.bangmaiche.TopicTest</td>
 <td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
+<td>146</td>
+<td>script.bangmaiche.TopicTest@6c9f3578</td></tr>
 <tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.xinche_zipinpaizongshu_testcase12()'><b>xinche_zipinpaizongshu_testcase12</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
+<td title='script.bangmaiche.TopicTest.bangmaiche_topic_testcase13()'><b>bangmaiche_topic_testcase13</b><br>Test class: script.bangmaiche.TopicTest</td>
 <td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
+<td>72</td>
+<td>script.bangmaiche.TopicTest@6c9f3578</td></tr>
 <tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.xinche_zipinpaizongshu_testcase13()'><b>xinche_zipinpaizongshu_testcase13</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
+<td title='script.bangmaiche.TopicTest.bangmaiche_topic_testcase15()'><b>bangmaiche_topic_testcase15</b><br>Test class: script.bangmaiche.TopicTest</td>
 <td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
+<td>57</td>
+<td>script.bangmaiche.TopicTest@6c9f3578</td></tr>
 <tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.xinche_zipinpaizongshu_testcase14()'><b>xinche_zipinpaizongshu_testcase14</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
+<td title='script.bangmaiche.TopicTest.bangmaiche_topic_testcase2()'><b>bangmaiche_topic_testcase2</b><br>Test class: script.bangmaiche.TopicTest</td>
 <td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
+<td>53</td>
+<td>script.bangmaiche.TopicTest@6c9f3578</td></tr>
 <tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.xinche_zipinpaizongshu_testcase15()'><b>xinche_zipinpaizongshu_testcase15</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
+<td title='script.bangmaiche.TopicTest.bangmaiche_topic_testcase3()'><b>bangmaiche_topic_testcase3</b><br>Test class: script.bangmaiche.TopicTest</td>
 <td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
+<td>88</td>
+<td>script.bangmaiche.TopicTest@6c9f3578</td></tr>
 <tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.xinche_zipinpaizongshu_testcase16()'><b>xinche_zipinpaizongshu_testcase16</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
+<td title='script.bangmaiche.TopicTest.bangmaiche_topic_testcase4()'><b>bangmaiche_topic_testcase4</b><br>Test class: script.bangmaiche.TopicTest</td>
 <td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
-<tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.xinche_zipinpaizongshu_testcase8()'><b>xinche_zipinpaizongshu_testcase8</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
-<td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
-<tr>
-<td title='script.xinche.ZiPinPaiZongShuTest.xinche_zipinpaizongshu_testcase9()'><b>xinche_zipinpaizongshu_testcase9</b><br>Test class: script.xinche.ZiPinPaiZongShuTest</td>
-<td></td>
-<td>0</td>
-<td>script.xinche.ZiPinPaiZongShuTest@7852fda6</td></tr>
+<td>132</td>
+<td>script.bangmaiche.TopicTest@6c9f3578</td></tr>
 </table><p>
 </body>
 </html>
